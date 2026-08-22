@@ -1446,5 +1446,125 @@
     "filePath": "/models/respiratory/left-lateral-nasal-cartilage.glb",
     "defaultColor": "#cf7c78",
     "defaultOpacity": 0.9
+  },
+  {
+    "id": "esophagus",
+    "displayName": "Esophagus",
+    "system": "digestive",
+    "filePath": "/models/digestive/esophagus.glb",
+    "defaultColor": "#b77a6a",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "stomach",
+    "displayName": "Stomach",
+    "system": "digestive",
+    "filePath": "/models/digestive/stomach.glb",
+    "defaultColor": "#b96f61",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "liver",
+    "displayName": "Liver",
+    "system": "digestive",
+    "filePath": "/models/digestive/liver.glb",
+    "defaultColor": "#8f4a3f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "pancreas",
+    "displayName": "Pancreas",
+    "system": "digestive",
+    "filePath": "/models/digestive/pancreas.glb",
+    "defaultColor": "#d29a65",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "small-intestine",
+    "displayName": "Small intestine",
+    "system": "digestive",
+    "filePath": "/models/digestive/small-intestine.glb",
+    "defaultColor": "#c58b67",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "large-intestine",
+    "displayName": "Large intestine",
+    "system": "digestive",
+    "filePath": "/models/digestive/large-intestine.glb",
+    "defaultColor": "#ad735d",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "gallbladder",
+    "displayName": "Gallbladder",
+    "system": "digestive",
+    "filePath": "/models/digestive/gallbladder.glb",
+    "defaultColor": "#79945c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "cerebrum",
+    "displayName": "Cerebrum",
+    "system": "nervous",
+    "filePath": "/models/nervous/cerebrum.glb",
+    "defaultColor": "#d4a39a",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "cerebellum",
+    "displayName": "Cerebellum",
+    "system": "nervous",
+    "filePath": "/models/nervous/cerebellum.glb",
+    "defaultColor": "#c58f87",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "brainstem",
+    "displayName": "Brainstem",
+    "system": "nervous",
+    "filePath": "/models/nervous/brainstem.glb",
+    "defaultColor": "#d2a178",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-kidney",
+    "displayName": "Right kidney",
+    "system": "urinary",
+    "filePath": "/models/urinary/right-kidney.glb",
+    "defaultColor": "#9e5c54",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-kidney",
+    "displayName": "Left kidney",
+    "system": "urinary",
+    "filePath": "/models/urinary/left-kidney.glb",
+    "defaultColor": "#9e5c54",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-ureter",
+    "displayName": "Right ureter",
+    "system": "urinary",
+    "filePath": "/models/urinary/right-ureter.glb",
+    "defaultColor": "#c99370",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-ureter",
+    "displayName": "Left ureter",
+    "system": "urinary",
+    "filePath": "/models/urinary/left-ureter.glb",
+    "defaultColor": "#c99370",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "urinary-bladder",
+    "displayName": "Urinary bladder",
+    "system": "urinary",
+    "filePath": "/models/urinary/urinary-bladder.glb",
+    "defaultColor": "#c49a7d",
+    "defaultOpacity": 0.95
   }
 ]
