@@ -1,6 +1,218 @@
 [
-  { "id": "skull", "displayName": "Skull", "system": "skeletal", "filePath": "/models/skeletal/skull.glb", "defaultColor": "#e8dfc8", "defaultOpacity": 1 },
-  { "id": "left-femur", "displayName": "Left Femur", "system": "skeletal", "filePath": "/models/skeletal/left_femur.glb", "defaultColor": "#e4dac0", "defaultOpacity": 1 },
-  { "id": "heart", "displayName": "Heart", "system": "circulatory", "filePath": "/models/circulatory/heart.glb", "defaultColor": "#a83e43", "defaultOpacity": 0.96 },
-  { "id": "right-lung", "displayName": "Right Lung", "system": "respiratory", "filePath": "/models/respiratory/right_lung.glb", "defaultColor": "#cf7c78", "defaultOpacity": 0.88 }
+  {
+    "id": "mandible",
+    "displayName": "Mandible",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/mandible.glb",
+    "defaultColor": "#e8dfc8",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "femur-right",
+    "displayName": "Right Femur",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/femur-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "femur-left",
+    "displayName": "Left Femur",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/femur-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "tibia-right",
+    "displayName": "Right Tibia",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/tibia-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "tibia-left",
+    "displayName": "Left Tibia",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/tibia-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "fibula-right",
+    "displayName": "Right Fibula",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fibula-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "fibula-left",
+    "displayName": "Left Fibula",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fibula-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "humerus-right",
+    "displayName": "Right Humerus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/humerus-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "humerus-left",
+    "displayName": "Left Humerus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/humerus-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "radius-right",
+    "displayName": "Right Radius",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/radius-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "radius-left",
+    "displayName": "Left Radius",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/radius-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "ulna-right",
+    "displayName": "Right Ulna",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/ulna-right.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "ulna-left",
+    "displayName": "Left Ulna",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/ulna-left.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "sacrum",
+    "displayName": "Sacrum",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/sacrum.glb",
+    "defaultColor": "#e8dfc8",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "wall-of-ventricle",
+    "displayName": "Wall of Ventricle",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/wall-of-ventricle.glb",
+    "defaultColor": "#a83e43",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "wall-of-left-atrium",
+    "displayName": "Wall of Left Atrium",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/wall-of-left-atrium.glb",
+    "defaultColor": "#a83e43",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "wall-of-right-atrium",
+    "displayName": "Wall of Right Atrium",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/wall-of-right-atrium.glb",
+    "defaultColor": "#a83e43",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "ascending-aorta",
+    "displayName": "Ascending Aorta",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/ascending-aorta.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "arch-of-aorta",
+    "displayName": "Arch of Aorta",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/arch-of-aorta.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "descending-aorta",
+    "displayName": "Descending Aorta",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/descending-aorta.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pulmonary-trunk",
+    "displayName": "Pulmonary Trunk",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/pulmonary-trunk.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pulmonary-artery-right",
+    "displayName": "Right Pulmonary Artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/pulmonary-artery-right.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pulmonary-artery-left",
+    "displayName": "Left Pulmonary Artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/pulmonary-artery-left.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "trachea",
+    "displayName": "Trachea",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/trachea.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "main-bronchus-left",
+    "displayName": "Left Main Bronchus",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/main-bronchus-left.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "main-bronchus-right",
+    "displayName": "Right Main Bronchus Proper",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/main-bronchus-right.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "diaphragm",
+    "displayName": "Diaphragm",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/diaphragm.glb",
+    "defaultColor": "#c96f6b",
+    "defaultOpacity": 0.82
+  }
 ]
