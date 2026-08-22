@@ -1480,22 +1480,6 @@
     "defaultOpacity": 0.95
   },
   {
-    "id": "small-intestine",
-    "displayName": "Small intestine",
-    "system": "digestive",
-    "filePath": "/models/digestive/small-intestine.glb",
-    "defaultColor": "#c58b67",
-    "defaultOpacity": 0.95
-  },
-  {
-    "id": "large-intestine",
-    "displayName": "Large intestine",
-    "system": "digestive",
-    "filePath": "/models/digestive/large-intestine.glb",
-    "defaultColor": "#ad735d",
-    "defaultOpacity": 0.95
-  },
-  {
     "id": "gallbladder",
     "displayName": "Gallbladder",
     "system": "digestive",
@@ -1517,14 +1501,6 @@
     "system": "nervous",
     "filePath": "/models/nervous/cerebellum.glb",
     "defaultColor": "#c58f87",
-    "defaultOpacity": 0.92
-  },
-  {
-    "id": "brainstem",
-    "displayName": "Brainstem",
-    "system": "nervous",
-    "filePath": "/models/nervous/brainstem.glb",
-    "defaultColor": "#d2a178",
     "defaultOpacity": 0.92
   },
   {
@@ -2526,5 +2502,493 @@
     "filePath": "/models/urinary/urethra.glb",
     "defaultColor": "#c99370",
     "defaultOpacity": 0.95
+  },
+  {
+    "id": "duodenum",
+    "displayName": "Duodenum",
+    "system": "digestive",
+    "filePath": "/models/digestive/duodenum.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "jejunum",
+    "displayName": "Jejunum",
+    "system": "digestive",
+    "filePath": "/models/digestive/jejunum.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "ileum",
+    "displayName": "Ileum",
+    "system": "digestive",
+    "filePath": "/models/digestive/ileum.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "ascending-colon",
+    "displayName": "Ascending colon",
+    "system": "digestive",
+    "filePath": "/models/digestive/ascending-colon.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "transverse-colon",
+    "displayName": "Transverse colon",
+    "system": "digestive",
+    "filePath": "/models/digestive/transverse-colon.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "descending-colon",
+    "displayName": "Descending colon",
+    "system": "digestive",
+    "filePath": "/models/digestive/descending-colon.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "rectum",
+    "displayName": "Rectum",
+    "system": "digestive",
+    "filePath": "/models/digestive/rectum.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "appendix",
+    "displayName": "Appendix",
+    "system": "digestive",
+    "filePath": "/models/digestive/appendix.glb",
+    "defaultColor": "#b77a4f",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "midbrain",
+    "displayName": "Midbrain",
+    "system": "nervous",
+    "filePath": "/models/nervous/midbrain.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "pons",
+    "displayName": "Pons",
+    "system": "nervous",
+    "filePath": "/models/nervous/pons.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "medulla-oblongata",
+    "displayName": "Medulla oblongata",
+    "system": "nervous",
+    "filePath": "/models/nervous/medulla-oblongata.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-thalamus",
+    "displayName": "Right thalamus",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-thalamus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-thalamus",
+    "displayName": "Left thalamus",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-thalamus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "hypothalamus",
+    "displayName": "Hypothalamus",
+    "system": "nervous",
+    "filePath": "/models/nervous/hypothalamus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-hippocampus",
+    "displayName": "Right hippocampus",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-hippocampus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-hippocampus",
+    "displayName": "Left hippocampus",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-hippocampus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-amygdala",
+    "displayName": "Right amygdala",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-amygdala.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-amygdala",
+    "displayName": "Left amygdala",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-amygdala.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-caudate-nucleus",
+    "displayName": "Right caudate nucleus",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-caudate-nucleus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-caudate-nucleus",
+    "displayName": "Left caudate nucleus",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-caudate-nucleus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-putamen",
+    "displayName": "Right putamen",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-putamen.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-putamen",
+    "displayName": "Left putamen",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-putamen.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "right-globus-pallidus",
+    "displayName": "Right globus pallidus",
+    "system": "nervous",
+    "filePath": "/models/nervous/right-globus-pallidus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "left-globus-pallidus",
+    "displayName": "Left globus pallidus",
+    "system": "nervous",
+    "filePath": "/models/nervous/left-globus-pallidus.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "corpus-callosum",
+    "displayName": "Corpus callosum",
+    "system": "nervous",
+    "filePath": "/models/nervous/corpus-callosum.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "central-canal-of-spinal-cord",
+    "displayName": "Central canal of spinal cord",
+    "system": "nervous",
+    "filePath": "/models/nervous/central-canal-of-spinal-cord.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "superior-branch-of-right-oculomotor-nerve",
+    "displayName": "Superior branch of right oculomotor nerve",
+    "system": "nervous",
+    "filePath": "/models/nervous/superior-branch-of-right-oculomotor-nerve.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "superior-branch-of-left-oculomotor-nerve",
+    "displayName": "Superior branch of left oculomotor nerve",
+    "system": "nervous",
+    "filePath": "/models/nervous/superior-branch-of-left-oculomotor-nerve.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "inferior-branch-of-right-oculomotor-nerve",
+    "displayName": "Inferior branch of right oculomotor nerve",
+    "system": "nervous",
+    "filePath": "/models/nervous/inferior-branch-of-right-oculomotor-nerve.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "inferior-branch-of-left-oculomotor-nerve",
+    "displayName": "Inferior branch of left oculomotor nerve",
+    "system": "nervous",
+    "filePath": "/models/nervous/inferior-branch-of-left-oculomotor-nerve.glb",
+    "defaultColor": "#e1b75c",
+    "defaultOpacity": 0.92
+  },
+  {
+    "id": "upper-lobe-of-right-lung",
+    "displayName": "Upper lobe of right lung",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/upper-lobe-of-right-lung.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "middle-lobe-of-lung",
+    "displayName": "Middle lobe of lung",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/middle-lobe-of-lung.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "lower-lobe-of-right-lung",
+    "displayName": "Lower lobe of right lung",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/lower-lobe-of-right-lung.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "upper-lobe-of-left-lung",
+    "displayName": "Upper lobe of left lung",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/upper-lobe-of-left-lung.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "lower-lobe-of-left-lung",
+    "displayName": "Lower lobe of left lung",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/lower-lobe-of-left-lung.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "hepatic-portal-vein",
+    "displayName": "Hepatic portal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/hepatic-portal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pre-hepatic-portal-vein",
+    "displayName": "Pre-hepatic portal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/pre-hepatic-portal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-portal-vein",
+    "displayName": "Right portal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-portal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-portal-vein",
+    "displayName": "Left portal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-portal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-renal-artery",
+    "displayName": "Right renal artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-renal-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-renal-artery",
+    "displayName": "Left renal artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-renal-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-renal-vein",
+    "displayName": "Right renal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-renal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-renal-vein",
+    "displayName": "Left renal vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-renal-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-external-iliac-artery",
+    "displayName": "Right external iliac artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-external-iliac-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-external-iliac-artery",
+    "displayName": "Left external iliac artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-external-iliac-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-external-iliac-vein",
+    "displayName": "Right external iliac vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-external-iliac-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-external-iliac-vein",
+    "displayName": "Left external iliac vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-external-iliac-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-internal-iliac-artery",
+    "displayName": "Right internal iliac artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-internal-iliac-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-internal-iliac-artery",
+    "displayName": "Left internal iliac artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-internal-iliac-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-internal-iliac-vein",
+    "displayName": "Right internal iliac vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-internal-iliac-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-internal-iliac-vein",
+    "displayName": "Left internal iliac vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-internal-iliac-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-anterior-tibial-artery",
+    "displayName": "Right anterior tibial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-anterior-tibial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-anterior-tibial-artery",
+    "displayName": "Left anterior tibial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-anterior-tibial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-posterior-tibial-artery",
+    "displayName": "Right posterior tibial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-posterior-tibial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-posterior-tibial-artery",
+    "displayName": "Left posterior tibial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-posterior-tibial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-great-saphenous-vein",
+    "displayName": "Right great saphenous vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-great-saphenous-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-great-saphenous-vein",
+    "displayName": "Left great saphenous vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-great-saphenous-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "circumflex-branch-of-left-coronary-artery",
+    "displayName": "Circumflex branch of left coronary artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/circumflex-branch-of-left-coronary-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "trunk-of-anterior-interventricular-branch-of-left-coronary-artery",
+    "displayName": "Trunk of anterior interventricular branch of left coronary artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/trunk-of-anterior-interventricular-branch-of-left-coronary-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "posterior-interventricular-branch-of-right-coronary-artery",
+    "displayName": "Posterior interventricular branch of right coronary artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/posterior-interventricular-branch-of-right-coronary-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "marginal-branch-of-right-coronary-artery",
+    "displayName": "Marginal branch of right coronary artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/marginal-branch-of-right-coronary-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
   }
 ]
