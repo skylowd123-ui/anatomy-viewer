@@ -1,0 +1,6 @@
+[
+  { "id": "skull", "displayName": "Skull", "system": "skeletal", "filePath": "/models/skeletal/skull.glb", "defaultColor": "#e8dfc8", "defaultOpacity": 1 },
+  { "id": "left-femur", "displayName": "Left Femur", "system": "skeletal", "filePath": "/models/skeletal/left_femur.glb", "defaultColor": "#e4dac0", "defaultOpacity": 1 },
+  { "id": "heart", "displayName": "Heart", "system": "circulatory", "filePath": "/models/circulatory/heart.glb", "defaultColor": "#a83e43", "defaultOpacity": 0.96 },
+  { "id": "right-lung", "displayName": "Right Lung", "system": "respiratory", "filePath": "/models/respiratory/right_lung.glb", "defaultColor": "#cf7c78", "defaultOpacity": 0.88 }
+]
