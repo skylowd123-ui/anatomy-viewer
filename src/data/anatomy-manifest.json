@@ -1566,5 +1566,429 @@
     "filePath": "/models/urinary/urinary-bladder.glb",
     "defaultColor": "#c49a7d",
     "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-scaphoid",
+    "displayName": "Right scaphoid",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-scaphoid.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-lunate",
+    "displayName": "Right lunate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-lunate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-triquetral",
+    "displayName": "Right triquetral",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-triquetral.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-pisiform",
+    "displayName": "Right pisiform",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-pisiform.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-trapezium",
+    "displayName": "Right trapezium",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-trapezium.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-trapezoid",
+    "displayName": "Right trapezoid",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-trapezoid.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-capitate",
+    "displayName": "Right capitate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-capitate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-hamate",
+    "displayName": "Right hamate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-hamate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-first-metacarpal-bone",
+    "displayName": "Right first metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-first-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-second-metacarpal-bone",
+    "displayName": "Right second metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-second-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-third-metacarpal-bone",
+    "displayName": "Right third metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-third-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fourth-metacarpal-bone",
+    "displayName": "Right fourth metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fourth-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fifth-metacarpal-bone",
+    "displayName": "Right fifth metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fifth-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-thumb",
+    "displayName": "Proximal phalanx of right thumb",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-thumb.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-index-finger",
+    "displayName": "Proximal phalanx of right index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-middle-finger",
+    "displayName": "Proximal phalanx of right middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-ring-finger",
+    "displayName": "Proximal phalanx of right ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-little-finger",
+    "displayName": "Proximal phalanx of right little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-index-finger",
+    "displayName": "Middle phalanx of right index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-middle-finger",
+    "displayName": "Middle phalanx of right middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-ring-finger",
+    "displayName": "Middle phalanx of right ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-little-finger",
+    "displayName": "Middle phalanx of right little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-thumb",
+    "displayName": "Distal phalanx of right thumb",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-thumb.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-index-finger",
+    "displayName": "Distal phalanx of right index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-middle-finger",
+    "displayName": "Distal phalanx of right middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-ring-finger",
+    "displayName": "Distal phalanx of right ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-little-finger",
+    "displayName": "Distal phalanx of right little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-talus",
+    "displayName": "Right talus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-talus.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-calcaneus",
+    "displayName": "Right calcaneus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-calcaneus.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "navicular-bone-of-right-foot",
+    "displayName": "Navicular bone of right foot",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/navicular-bone-of-right-foot.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-cuboid-bone",
+    "displayName": "Right cuboid bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-cuboid-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-medial-cuneiform-bone",
+    "displayName": "Right medial cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-medial-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-intermediate-cuneiform-bone",
+    "displayName": "Right intermediate cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-intermediate-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-lateral-cuneiform-bone",
+    "displayName": "Right lateral cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-lateral-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-first-metatarsal-bone",
+    "displayName": "Right first metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-first-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-second-metatarsal-bone",
+    "displayName": "Right second metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-second-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-third-metatarsal-bone",
+    "displayName": "Right third metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-third-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fourth-metatarsal-bone",
+    "displayName": "Right fourth metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fourth-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fifth-metatarsal-bone",
+    "displayName": "Right fifth metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fifth-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-big-toe",
+    "displayName": "Proximal phalanx of right big toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-big-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-big-toe",
+    "displayName": "Distal phalanx of right big toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-big-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-second-toe",
+    "displayName": "Proximal phalanx of right second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-second-toe",
+    "displayName": "Middle phalanx of right second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-second-toe",
+    "displayName": "Distal phalanx of right second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-third-toe",
+    "displayName": "Proximal phalanx of right third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-third-toe",
+    "displayName": "Middle phalanx of right third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-third-toe",
+    "displayName": "Distal phalanx of right third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-fourth-toe",
+    "displayName": "Proximal phalanx of right fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-fourth-toe",
+    "displayName": "Middle phalanx of right fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-fourth-toe",
+    "displayName": "Distal phalanx of right fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-right-little-toe",
+    "displayName": "Proximal phalanx of right little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-right-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-right-little-toe",
+    "displayName": "Middle phalanx of right little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-right-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-right-little-toe",
+    "displayName": "Distal phalanx of right little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-right-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
   }
 ]
