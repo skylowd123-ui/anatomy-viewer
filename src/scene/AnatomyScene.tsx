@@ -48,8 +48,12 @@ function StructureModel({ item, opacity, selected, matched, showLabel, onSelect,
       clone.traverse(child => {
         if (child instanceof THREE.Mesh) {
           child.geometry = child.geometry.clone()
-          const sourceMaterial = Array.isArray(child.material) ? child.material[0] : child.material
-          child.material = sourceMaterial.clone()
+          // Each loaded mesh owns its material instance. This prevents cached
+          // GLTF materials (and multi-material meshes) from sharing opacity
+          // state across structures or only updating the first instance.
+          child.material = Array.isArray(child.material)
+            ? child.material.map(material => material.clone())
+            : child.material.clone()
           child.castShadow = true; child.receiveShadow = true
         }
       })
@@ -67,15 +71,21 @@ function StructureModel({ item, opacity, selected, matched, showLabel, onSelect,
       if (!(child instanceof THREE.Mesh)) return
       const materials = Array.isArray(child.material) ? child.material : [child.material]
       materials.forEach(material => {
-        if (!(material instanceof THREE.MeshStandardMaterial)) return
-        material.color.set(item.defaultColor)
-        material.transparent = opacity < .999
-        material.opacity = opacity
-        material.depthWrite = opacity > .55
-        material.roughness = selected ? .35 : .7
-        material.metalness = 0
-        material.emissive.set(selected ? '#d9a865' : matched ? '#447c73' : '#000000')
-        material.emissiveIntensity = selected ? .45 : matched ? .32 : 0
+        // Opacity only participates in Three.js blending when transparent is
+        // enabled. Keep it enabled even at 100% so moving a layer slider does
+        // not require changing the material's render-program classification.
+        material.transparent = true
+        material.opacity = THREE.MathUtils.clamp(opacity, 0, 1)
+        material.depthWrite = opacity >= .98
+        material.needsUpdate = true
+
+        if (material instanceof THREE.MeshStandardMaterial) {
+          material.color.set(item.defaultColor)
+          material.roughness = selected ? .35 : .7
+          material.metalness = 0
+          material.emissive.set(selected ? '#d9a865' : matched ? '#447c73' : '#000000')
+          material.emissiveIntensity = selected ? .45 : matched ? .32 : 0
+        }
       })
     })
   }, [object, opacity, selected, matched, item.defaultColor])
