@@ -143,7 +143,14 @@ function CameraController({ request, readyVersion }: { request: Props['focusRequ
 function SceneContents(props: Props) {
   const [loaded, setLoaded] = useState<Set<string>>(() => new Set())
   const [readyVersion, setReadyVersion] = useState(0)
-  const visible = props.structures.filter(item => props.layers[item.system].visible && (!props.isolateId || props.isolateId === item.id))
+  // At exactly zero opacity, omit the structure from the scene graph rather
+  // than merely drawing a transparent material. This guarantees that fully
+  // hidden layers cannot participate in raycasting or affect depth/blending.
+  const visible = props.structures.filter(item =>
+    props.layers[item.system].visible &&
+    props.layers[item.system].opacity * item.defaultOpacity > 0 &&
+    (!props.isolateId || props.isolateId === item.id)
+  )
   const reportReady = useMemo(() => (id: string) => {
     setLoaded(prev => { if (prev.has(id)) return prev; const next = new Set(prev); next.add(id); return next })
     setReadyVersion(v => v + 1)

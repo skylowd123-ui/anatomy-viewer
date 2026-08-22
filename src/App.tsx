@@ -97,7 +97,7 @@ function App() {
                 <span><b>{systemMeta[system].label}</b><small>{count ? `${count} ${count === 1 ? 'structure' : 'structures'}` : 'Awaiting models'}</small></span>
                 <ChevronDown size={15} />
               </button>
-              {state.visible && <div className="opacity-row"><span>Opacity</span><input type="range" min="0.08" max="1" step="0.01" value={state.opacity} onChange={e => setOpacity(system, Number(e.target.value))} /><output>{Math.round(state.opacity * 100)}%</output></div>}
+              {state.visible && <div className="opacity-row"><span>Opacity</span><input type="range" min="0" max="1" step="0.01" value={state.opacity} onChange={e => setOpacity(system, Number(e.target.value))} /><output>{Math.round(state.opacity * 100)}%</output></div>}
             </div>
           })}
         </div>
