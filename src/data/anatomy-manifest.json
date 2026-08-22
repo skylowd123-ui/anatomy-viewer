@@ -2528,6 +2528,14 @@
     "defaultOpacity": 0.95
   },
   {
+    "id": "cecum",
+    "displayName": "Cecum",
+    "system": "digestive",
+    "filePath": "/models/digestive/cecum.glb",
+    "defaultColor": "#c18458",
+    "defaultOpacity": 0.95
+  },
+  {
     "id": "ascending-colon",
     "displayName": "Ascending colon",
     "system": "digestive",
