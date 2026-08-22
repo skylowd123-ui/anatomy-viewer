@@ -2748,40 +2748,40 @@
     "displayName": "Upper lobe of right lung",
     "system": "respiratory",
     "filePath": "/models/respiratory/upper-lobe-of-right-lung.glb",
-    "defaultColor": "#cf7c78",
-    "defaultOpacity": 0.9
+    "defaultColor": "#d98b84",
+    "defaultOpacity": 0.94
   },
   {
     "id": "middle-lobe-of-lung",
     "displayName": "Middle lobe of lung",
     "system": "respiratory",
     "filePath": "/models/respiratory/middle-lobe-of-lung.glb",
-    "defaultColor": "#cf7c78",
-    "defaultOpacity": 0.9
+    "defaultColor": "#c97772",
+    "defaultOpacity": 0.94
   },
   {
     "id": "lower-lobe-of-right-lung",
     "displayName": "Lower lobe of right lung",
     "system": "respiratory",
     "filePath": "/models/respiratory/lower-lobe-of-right-lung.glb",
-    "defaultColor": "#cf7c78",
-    "defaultOpacity": 0.9
+    "defaultColor": "#b96565",
+    "defaultOpacity": 0.94
   },
   {
     "id": "upper-lobe-of-left-lung",
     "displayName": "Upper lobe of left lung",
     "system": "respiratory",
     "filePath": "/models/respiratory/upper-lobe-of-left-lung.glb",
-    "defaultColor": "#cf7c78",
-    "defaultOpacity": 0.9
+    "defaultColor": "#d58e88",
+    "defaultOpacity": 0.94
   },
   {
     "id": "lower-lobe-of-left-lung",
     "displayName": "Lower lobe of left lung",
     "system": "respiratory",
     "filePath": "/models/respiratory/lower-lobe-of-left-lung.glb",
-    "defaultColor": "#cf7c78",
-    "defaultOpacity": 0.9
+    "defaultColor": "#bd6d68",
+    "defaultOpacity": 0.94
   },
   {
     "id": "hepatic-portal-vein",
