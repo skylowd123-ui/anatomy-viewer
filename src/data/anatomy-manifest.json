@@ -214,5 +214,1237 @@
     "filePath": "/models/respiratory/diaphragm.glb",
     "defaultColor": "#c96f6b",
     "defaultOpacity": 0.82
+  },
+  {
+    "id": "frontal-bone",
+    "displayName": "Frontal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/frontal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-parietal-bone",
+    "displayName": "Right parietal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-parietal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-parietal-bone",
+    "displayName": "Left parietal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-parietal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-temporal-bone",
+    "displayName": "Right temporal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-temporal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-temporal-bone",
+    "displayName": "Left temporal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-temporal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "occipital-bone",
+    "displayName": "Occipital bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/occipital-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "sphenoid-bone",
+    "displayName": "Sphenoid bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/sphenoid-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "ethmoid",
+    "displayName": "Ethmoid",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/ethmoid.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-nasal-bone",
+    "displayName": "Right nasal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-nasal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-nasal-bone",
+    "displayName": "Left nasal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-nasal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-maxilla",
+    "displayName": "Right maxilla",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-maxilla.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-maxilla",
+    "displayName": "Left maxilla",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-maxilla.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-zygomatic-bone",
+    "displayName": "Right zygomatic bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-zygomatic-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-zygomatic-bone",
+    "displayName": "Left zygomatic bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-zygomatic-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-lacrimal-bone",
+    "displayName": "Right lacrimal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-lacrimal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-lacrimal-bone",
+    "displayName": "Left lacrimal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-lacrimal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-palatine-bone",
+    "displayName": "Right palatine bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-palatine-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-palatine-bone",
+    "displayName": "Left palatine bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-palatine-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "vomer",
+    "displayName": "Vomer",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/vomer.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-inferior-nasal-concha",
+    "displayName": "Right inferior nasal concha",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-inferior-nasal-concha.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-inferior-nasal-concha",
+    "displayName": "Left inferior nasal concha",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-inferior-nasal-concha.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "atlas",
+    "displayName": "Atlas",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/atlas.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "axis",
+    "displayName": "Axis",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/axis.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "third-cervical-vertebra",
+    "displayName": "Third cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/third-cervical-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fourth-cervical-vertebra",
+    "displayName": "Fourth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fourth-cervical-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fifth-cervical-vertebra",
+    "displayName": "Fifth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fifth-cervical-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "sixth-cervical-vertebra",
+    "displayName": "Sixth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/sixth-cervical-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "seventh-cervical-vertebra",
+    "displayName": "Seventh cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/seventh-cervical-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "first-thoracic-vertebra",
+    "displayName": "First thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/first-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "second-thoracic-vertebra",
+    "displayName": "Second thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/second-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "third-thoracic-vertebra",
+    "displayName": "Third thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/third-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fourth-thoracic-vertebra",
+    "displayName": "Fourth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fourth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fifth-thoracic-vertebra",
+    "displayName": "Fifth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fifth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "sixth-thoracic-vertebra",
+    "displayName": "Sixth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/sixth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "seventh-thoracic-vertebra",
+    "displayName": "Seventh thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/seventh-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "eighth-thoracic-vertebra",
+    "displayName": "Eighth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/eighth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "ninth-thoracic-vertebra",
+    "displayName": "Ninth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/ninth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "tenth-thoracic-vertebra",
+    "displayName": "Tenth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/tenth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "eleventh-thoracic-vertebra",
+    "displayName": "Eleventh thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/eleventh-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "twelfth-thoracic-vertebra",
+    "displayName": "Twelfth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/twelfth-thoracic-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "first-lumbar-vertebra",
+    "displayName": "First lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/first-lumbar-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "second-lumbar-vertebra",
+    "displayName": "Second lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/second-lumbar-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "third-lumbar-vertebra",
+    "displayName": "Third lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/third-lumbar-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fourth-lumbar-vertebra",
+    "displayName": "Fourth lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fourth-lumbar-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "fifth-lumbar-vertebra",
+    "displayName": "Fifth lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/fifth-lumbar-vertebra.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-first-rib",
+    "displayName": "Right first rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-first-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-second-rib",
+    "displayName": "Right second rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-second-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-third-rib",
+    "displayName": "Right third rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-third-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fourth-rib",
+    "displayName": "Right fourth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fourth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-fifth-rib",
+    "displayName": "Right fifth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fifth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-sixth-rib",
+    "displayName": "Right sixth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-sixth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-seventh-rib",
+    "displayName": "Right seventh rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-seventh-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-eighth-rib",
+    "displayName": "Right eighth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-eighth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-ninth-rib",
+    "displayName": "Right ninth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-ninth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-tenth-rib",
+    "displayName": "Right tenth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-tenth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-eleventh-rib",
+    "displayName": "Right eleventh rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-eleventh-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-twelfth-rib",
+    "displayName": "Right twelfth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-twelfth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-first-rib",
+    "displayName": "Left first rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-first-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-second-rib",
+    "displayName": "Left second rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-second-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-third-rib",
+    "displayName": "Left third rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-third-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fourth-rib",
+    "displayName": "Left fourth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fourth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fifth-rib",
+    "displayName": "Left fifth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fifth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-sixth-rib",
+    "displayName": "Left sixth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-sixth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-seventh-rib",
+    "displayName": "Left seventh rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-seventh-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-eighth-rib",
+    "displayName": "Left eighth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-eighth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-ninth-rib",
+    "displayName": "Left ninth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-ninth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-tenth-rib",
+    "displayName": "Left tenth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-tenth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-eleventh-rib",
+    "displayName": "Left eleventh rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-eleventh-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-twelfth-rib",
+    "displayName": "Left twelfth rib",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-twelfth-rib.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-scaphoid",
+    "displayName": "Left scaphoid",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-scaphoid.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-lunate",
+    "displayName": "Left lunate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-lunate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-triquetral",
+    "displayName": "Left triquetral",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-triquetral.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-pisiform",
+    "displayName": "Left pisiform",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-pisiform.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-trapezium",
+    "displayName": "Left trapezium",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-trapezium.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-trapezoid",
+    "displayName": "Left trapezoid",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-trapezoid.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-capitate",
+    "displayName": "Left capitate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-capitate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-hamate",
+    "displayName": "Left hamate",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-hamate.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-first-metacarpal-bone",
+    "displayName": "Left first metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-first-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-second-metacarpal-bone",
+    "displayName": "Left second metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-second-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-third-metacarpal-bone",
+    "displayName": "Left third metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-third-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fourth-metacarpal-bone",
+    "displayName": "Left fourth metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fourth-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fifth-metacarpal-bone",
+    "displayName": "Left fifth metacarpal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fifth-metacarpal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-thumb",
+    "displayName": "Proximal phalanx of left thumb",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-thumb.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-index-finger",
+    "displayName": "Proximal phalanx of left index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-middle-finger",
+    "displayName": "Proximal phalanx of left middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-ring-finger",
+    "displayName": "Proximal phalanx of left ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-little-finger",
+    "displayName": "Proximal phalanx of left little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-index-finger",
+    "displayName": "Middle phalanx of left index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-middle-finger",
+    "displayName": "Middle phalanx of left middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-ring-finger",
+    "displayName": "Middle phalanx of left ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-little-finger",
+    "displayName": "Middle phalanx of left little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-thumb",
+    "displayName": "Distal phalanx of left thumb",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-thumb.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-index-finger",
+    "displayName": "Distal phalanx of left index finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-index-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-middle-finger",
+    "displayName": "Distal phalanx of left middle finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-middle-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-ring-finger",
+    "displayName": "Distal phalanx of left ring finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-ring-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-little-finger",
+    "displayName": "Distal phalanx of left little finger",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-little-finger.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-talus",
+    "displayName": "Left talus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-talus.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-calcaneus",
+    "displayName": "Left calcaneus",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-calcaneus.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "navicular-bone-of-left-foot",
+    "displayName": "Navicular bone of left foot",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/navicular-bone-of-left-foot.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-cuboid-bone",
+    "displayName": "Left cuboid bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-cuboid-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-medial-cuneiform-bone",
+    "displayName": "Left medial cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-medial-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-intermediate-cuneiform-bone",
+    "displayName": "Left intermediate cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-intermediate-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-lateral-cuneiform-bone",
+    "displayName": "Left lateral cuneiform bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-lateral-cuneiform-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-first-metatarsal-bone",
+    "displayName": "Left first metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-first-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-second-metatarsal-bone",
+    "displayName": "Left second metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-second-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-third-metatarsal-bone",
+    "displayName": "Left third metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-third-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fourth-metatarsal-bone",
+    "displayName": "Left fourth metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fourth-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-fifth-metatarsal-bone",
+    "displayName": "Left fifth metatarsal bone",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fifth-metatarsal-bone.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-big-toe",
+    "displayName": "Proximal phalanx of left big toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-big-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-big-toe",
+    "displayName": "Distal phalanx of left big toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-big-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-second-toe",
+    "displayName": "Proximal phalanx of left second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-second-toe",
+    "displayName": "Middle phalanx of left second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-second-toe",
+    "displayName": "Distal phalanx of left second toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-second-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-third-toe",
+    "displayName": "Proximal phalanx of left third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-third-toe",
+    "displayName": "Middle phalanx of left third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-third-toe",
+    "displayName": "Distal phalanx of left third toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-third-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-fourth-toe",
+    "displayName": "Proximal phalanx of left fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-fourth-toe",
+    "displayName": "Middle phalanx of left fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-fourth-toe",
+    "displayName": "Distal phalanx of left fourth toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-fourth-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "proximal-phalanx-of-left-little-toe",
+    "displayName": "Proximal phalanx of left little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/proximal-phalanx-of-left-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "middle-phalanx-of-left-little-toe",
+    "displayName": "Middle phalanx of left little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/middle-phalanx-of-left-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "distal-phalanx-of-left-little-toe",
+    "displayName": "Distal phalanx of left little toe",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/distal-phalanx-of-left-little-toe.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-scapula",
+    "displayName": "Right scapula",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-scapula.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-scapula",
+    "displayName": "Left scapula",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-scapula.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "right-clavicle",
+    "displayName": "Right clavicle",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-clavicle.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "left-clavicle",
+    "displayName": "Left clavicle",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-clavicle.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1
+  },
+  {
+    "id": "superior-vena-cava",
+    "displayName": "Superior vena cava",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/superior-vena-cava.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "inferior-vena-cava",
+    "displayName": "Inferior vena cava",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/inferior-vena-cava.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-inferior-pulmonary-vein",
+    "displayName": "Right inferior pulmonary vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-inferior-pulmonary-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-inferior-pulmonary-vein",
+    "displayName": "Left inferior pulmonary vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-inferior-pulmonary-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-superior-pulmonary-vein",
+    "displayName": "Right superior pulmonary vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-superior-pulmonary-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-superior-pulmonary-vein",
+    "displayName": "Left superior pulmonary vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-superior-pulmonary-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-common-carotid-artery",
+    "displayName": "Right common carotid artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-common-carotid-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-common-carotid-artery",
+    "displayName": "Left common carotid artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-common-carotid-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-internal-carotid-artery",
+    "displayName": "Right internal carotid artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-internal-carotid-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-internal-carotid-artery",
+    "displayName": "Left internal carotid artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-internal-carotid-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-internal-jugular-vein",
+    "displayName": "Right internal jugular vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-internal-jugular-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-internal-jugular-vein",
+    "displayName": "Left internal jugular vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-internal-jugular-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-brachial-artery",
+    "displayName": "Right brachial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-brachial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-brachial-artery",
+    "displayName": "Left brachial artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-brachial-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-medial-brachial-vein",
+    "displayName": "Right medial brachial vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-medial-brachial-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-medial-brachial-vein",
+    "displayName": "Left medial brachial vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-medial-brachial-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-femoral-artery",
+    "displayName": "Right femoral artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-femoral-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-femoral-artery",
+    "displayName": "Left femoral artery",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-femoral-artery.glb",
+    "defaultColor": "#b83f49",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-femoral-vein",
+    "displayName": "Right femoral vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/right-femoral-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-femoral-vein",
+    "displayName": "Left femoral vein",
+    "system": "circulatory",
+    "filePath": "/models/circulatory/left-femoral-vein.glb",
+    "defaultColor": "#537fa8",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "epiglottis",
+    "displayName": "Epiglottis",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/epiglottis.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "thyroid-cartilage",
+    "displayName": "Thyroid cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/thyroid-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "cricoid-cartilage",
+    "displayName": "Cricoid cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/cricoid-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "right-arytenoid-cartilage",
+    "displayName": "Right arytenoid cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/right-arytenoid-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "left-arytenoid-cartilage",
+    "displayName": "Left arytenoid cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/left-arytenoid-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "septal-nasal-cartilage",
+    "displayName": "Septal nasal cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/septal-nasal-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "right-lateral-nasal-cartilage",
+    "displayName": "Right lateral nasal cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/right-lateral-nasal-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
+  },
+  {
+    "id": "left-lateral-nasal-cartilage",
+    "displayName": "Left lateral nasal cartilage",
+    "system": "respiratory",
+    "filePath": "/models/respiratory/left-lateral-nasal-cartilage.glb",
+    "defaultColor": "#cf7c78",
+    "defaultOpacity": 0.9
   }
 ]
