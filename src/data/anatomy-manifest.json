@@ -3326,5 +3326,389 @@
     "filePath": "/models/muscular/internal-intercostal-muscle.glb",
     "defaultColor": "#8d4542",
     "defaultOpacity": 0.94
+  },
+  {
+    "id": "clavicular-part-of-right-deltoid",
+    "displayName": "Clavicular part of right deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/clavicular-part-of-right-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "clavicular-part-of-left-deltoid",
+    "displayName": "Clavicular part of left deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/clavicular-part-of-left-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "acromial-part-of-right-deltoid",
+    "displayName": "Acromial part of right deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/acromial-part-of-right-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "acromial-part-of-left-deltoid",
+    "displayName": "Acromial part of left deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/acromial-part-of-left-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "spinal-part-of-right-deltoid",
+    "displayName": "Spinal part of right deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/spinal-part-of-right-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "spinal-part-of-left-deltoid",
+    "displayName": "Spinal part of left deltoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/spinal-part-of-left-deltoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "short-head-of-right-biceps-brachii",
+    "displayName": "Short head of right biceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/short-head-of-right-biceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "short-head-of-left-biceps-brachii",
+    "displayName": "Short head of left biceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/short-head-of-left-biceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-right-biceps-brachii",
+    "displayName": "Long head of right biceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-right-biceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-left-biceps-brachii",
+    "displayName": "Long head of left biceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-left-biceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-right-triceps-brachii",
+    "displayName": "Medial head of right triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-right-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-left-triceps-brachii",
+    "displayName": "Medial head of left triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-left-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "lateral-head-of-right-triceps-brachii",
+    "displayName": "Lateral head of right triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/lateral-head-of-right-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "lateral-head-of-left-triceps-brachii",
+    "displayName": "Lateral head of left triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/lateral-head-of-left-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-right-triceps-brachii",
+    "displayName": "Long head of right triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-right-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-left-triceps-brachii",
+    "displayName": "Long head of left triceps brachii",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-left-triceps-brachii.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-brachialis",
+    "displayName": "Right brachialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-brachialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-brachialis",
+    "displayName": "Left brachialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-brachialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-brachioradialis",
+    "displayName": "Right brachioradialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-brachioradialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-brachioradialis",
+    "displayName": "Left brachioradialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-brachioradialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-supraspinatus",
+    "displayName": "Right supraspinatus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-supraspinatus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-supraspinatus",
+    "displayName": "Left supraspinatus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-supraspinatus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-infraspinatus-muscle",
+    "displayName": "Right infraspinatus muscle",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-infraspinatus-muscle.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-infraspinatus-muscle",
+    "displayName": "Left infraspinatus muscle",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-infraspinatus-muscle.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-teres-major",
+    "displayName": "Right teres major",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-teres-major.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-teres-major",
+    "displayName": "Left teres major",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-teres-major.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-teres-minor",
+    "displayName": "Right teres minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-teres-minor.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-teres-minor",
+    "displayName": "Left teres minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-teres-minor.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-subscapularis",
+    "displayName": "Right subscapularis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-subscapularis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-subscapularis",
+    "displayName": "Left subscapularis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-subscapularis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-coracobrachialis",
+    "displayName": "Right coracobrachialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-coracobrachialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-coracobrachialis",
+    "displayName": "Left coracobrachialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-coracobrachialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-flexor-carpi-radialis",
+    "displayName": "Right flexor carpi radialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-flexor-carpi-radialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-flexor-carpi-radialis",
+    "displayName": "Left flexor carpi radialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-flexor-carpi-radialis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "humeral-head-of-right-flexor-carpi-ulnaris",
+    "displayName": "Humeral head of right flexor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/humeral-head-of-right-flexor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "humeral-head-of-left-flexor-carpi-ulnaris",
+    "displayName": "Humeral head of left flexor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/humeral-head-of-left-flexor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ulnar-head-of-right-flexor-carpi-ulnaris",
+    "displayName": "Ulnar head of right flexor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/ulnar-head-of-right-flexor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ulnar-head-of-left-flexor-carpi-ulnaris",
+    "displayName": "Ulnar head of left flexor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/ulnar-head-of-left-flexor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-extensor-carpi-radialis-longus",
+    "displayName": "Right extensor carpi radialis longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-extensor-carpi-radialis-longus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-extensor-carpi-radialis-longus",
+    "displayName": "Left extensor carpi radialis longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-extensor-carpi-radialis-longus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-extensor-carpi-radialis-brevis",
+    "displayName": "Right extensor carpi radialis brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-extensor-carpi-radialis-brevis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-extensor-carpi-radialis-brevis",
+    "displayName": "Left extensor carpi radialis brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-extensor-carpi-radialis-brevis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-extensor-carpi-ulnaris",
+    "displayName": "Right extensor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-extensor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-extensor-carpi-ulnaris",
+    "displayName": "Left extensor carpi ulnaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-extensor-carpi-ulnaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "humeral-head-of-right-pronator-teres",
+    "displayName": "Humeral head of right pronator teres",
+    "system": "muscular",
+    "filePath": "/models/muscular/humeral-head-of-right-pronator-teres.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "humeral-head-of-left-pronator-teres",
+    "displayName": "Humeral head of left pronator teres",
+    "system": "muscular",
+    "filePath": "/models/muscular/humeral-head-of-left-pronator-teres.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ulnar-head-of-right-pronator-teres",
+    "displayName": "Ulnar head of right pronator teres",
+    "system": "muscular",
+    "filePath": "/models/muscular/ulnar-head-of-right-pronator-teres.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ulnar-head-of-left-pronator-teres",
+    "displayName": "Ulnar head of left pronator teres",
+    "system": "muscular",
+    "filePath": "/models/muscular/ulnar-head-of-left-pronator-teres.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
   }
 ]
