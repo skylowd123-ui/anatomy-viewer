@@ -4670,5 +4670,565 @@
     "filePath": "/models/muscular/left-lumbar-rotator.glb",
     "defaultColor": "#a34c48",
     "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-medial-rectus",
+    "displayName": "Left medial rectus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-medial-rectus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-middle-pharyngeal-constrictor",
+    "displayName": "Left middle pharyngeal constrictor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-middle-pharyngeal-constrictor.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-mylohyoid",
+    "displayName": "Left mylohyoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-mylohyoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-oblique-arytenoid",
+    "displayName": "Left oblique arytenoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-oblique-arytenoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-obliquus-capitis-inferior",
+    "displayName": "Left obliquus capitis inferior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-obliquus-capitis-inferior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-obliquus-capitis-superior",
+    "displayName": "Left obliquus capitis superior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-obliquus-capitis-superior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-obturator-externus",
+    "displayName": "Left obturator externus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-obturator-externus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-obturator-internus",
+    "displayName": "Left obturator internus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-obturator-internus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-omohyoid",
+    "displayName": "Left omohyoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-omohyoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-opponens-pollicis",
+    "displayName": "Left opponens pollicis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-opponens-pollicis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-palatopharyngeus",
+    "displayName": "Left palatopharyngeus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-palatopharyngeus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-palmaris-longus",
+    "displayName": "Left palmaris longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-palmaris-longus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-piriformis",
+    "displayName": "Left piriformis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-piriformis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-plantaris",
+    "displayName": "Left plantaris",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-plantaris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-platysma",
+    "displayName": "Left platysma",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-platysma.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-popliteus",
+    "displayName": "Left popliteus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-popliteus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-posterior-crico-arytenoid",
+    "displayName": "Left posterior crico-arytenoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-posterior-crico-arytenoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-pronator-quadratus",
+    "displayName": "Left pronator quadratus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-pronator-quadratus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-pubococcygeus",
+    "displayName": "Left pubococcygeus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-pubococcygeus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-puborectalis",
+    "displayName": "Left puborectalis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-puborectalis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-quadratus-femoris",
+    "displayName": "Left quadratus femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-quadratus-femoris.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rectus-capitis-anterior",
+    "displayName": "Left rectus capitis anterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rectus-capitis-anterior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rectus-capitis-lateralis",
+    "displayName": "Left rectus capitis lateralis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rectus-capitis-lateralis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rectus-capitis-posterior-major",
+    "displayName": "Left rectus capitis posterior major",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rectus-capitis-posterior-major.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rectus-capitis-posterior-minor",
+    "displayName": "Left rectus capitis posterior minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rectus-capitis-posterior-minor.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-salpingopharyngeus",
+    "displayName": "Left salpingopharyngeus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-salpingopharyngeus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-scalenus-anterior",
+    "displayName": "Left scalenus anterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-scalenus-anterior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-scalenus-medius",
+    "displayName": "Left scalenus medius",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-scalenus-medius.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-scalenus-posterior",
+    "displayName": "Left scalenus posterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-scalenus-posterior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-semispinalis-capitis",
+    "displayName": "Left semispinalis capitis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-semispinalis-capitis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-semispinalis-cervicis",
+    "displayName": "Left semispinalis cervicis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-semispinalis-cervicis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-semispinalis-thoracis",
+    "displayName": "Left semispinalis thoracis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-semispinalis-thoracis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-serratus-anterior",
+    "displayName": "Left serratus anterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-serratus-anterior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-serratus-posterior-inferior",
+    "displayName": "Left serratus posterior inferior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-serratus-posterior-inferior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-serratus-posterior-superior",
+    "displayName": "Left serratus posterior superior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-serratus-posterior-superior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-spinalis-thoracis",
+    "displayName": "Left spinalis thoracis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-spinalis-thoracis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-splenius-capitis",
+    "displayName": "Left splenius capitis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-splenius-capitis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-splenius-cervicis",
+    "displayName": "Left splenius cervicis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-splenius-cervicis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-sternohyoid",
+    "displayName": "Left sternohyoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-sternohyoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-sternothyroid",
+    "displayName": "Left sternothyroid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-sternothyroid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-stylohyoid",
+    "displayName": "Left stylohyoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-stylohyoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-stylopharyngeus",
+    "displayName": "Left stylopharyngeus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-stylopharyngeus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-subclavius",
+    "displayName": "Left subclavius",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-subclavius.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-superior-oblique",
+    "displayName": "Left superior oblique",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-superior-oblique.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-superior-pharyngeal-constrictor",
+    "displayName": "Left superior pharyngeal constrictor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-superior-pharyngeal-constrictor.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-superior-rectus",
+    "displayName": "Left superior rectus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-superior-rectus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-supinator",
+    "displayName": "Left supinator",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-supinator.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-tensor-veli-palatini",
+    "displayName": "Left tensor veli palatini",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-tensor-veli-palatini.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-thyro-arytenoid",
+    "displayName": "Left thyro-arytenoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-thyro-arytenoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-thyrohyoid",
+    "displayName": "Left thyrohyoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-thyrohyoid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-tibialis-posterior",
+    "displayName": "Left tibialis posterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-tibialis-posterior.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-transversus-thoracis",
+    "displayName": "Left transversus thoracis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-transversus-thoracis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-vocalis",
+    "displayName": "Left vocalis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-vocalis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-left-flexor-hallucis-brevis",
+    "displayName": "Medial head of left flexor hallucis brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-left-flexor-hallucis-brevis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-right-flexor-hallucis-brevis",
+    "displayName": "Medial head of right flexor hallucis brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-right-flexor-hallucis-brevis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-lumbar-intertransversarius",
+    "displayName": "Medial lumbar intertransversarius",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-lumbar-intertransversarius.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-head-of-left-adductor-hallucis",
+    "displayName": "Oblique head of left adductor hallucis",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-head-of-left-adductor-hallucis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-head-of-left-adductor-pollicis",
+    "displayName": "Oblique head of left adductor pollicis",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-head-of-left-adductor-pollicis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-head-of-right-adductor-hallucis",
+    "displayName": "Oblique head of right adductor hallucis",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-head-of-right-adductor-hallucis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-head-of-right-adductor-pollicis",
+    "displayName": "Oblique head of right adductor pollicis",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-head-of-right-adductor-pollicis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-part-of-left-cricothyroid",
+    "displayName": "Oblique part of left cricothyroid",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-part-of-left-cricothyroid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "oblique-part-of-right-cricothyroid",
+    "displayName": "Oblique part of right cricothyroid",
+    "system": "muscular",
+    "filePath": "/models/muscular/oblique-part-of-right-cricothyroid.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "opponens-digiti-minimi-of-left-foot",
+    "displayName": "Opponens digiti minimi of left foot",
+    "system": "muscular",
+    "filePath": "/models/muscular/opponens-digiti-minimi-of-left-foot.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "opponens-digiti-minimi-of-left-hand",
+    "displayName": "Opponens digiti minimi of left hand",
+    "system": "muscular",
+    "filePath": "/models/muscular/opponens-digiti-minimi-of-left-hand.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "opponens-digiti-minimi-of-right-foot",
+    "displayName": "Opponens digiti minimi of right foot",
+    "system": "muscular",
+    "filePath": "/models/muscular/opponens-digiti-minimi-of-right-foot.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "opponens-digiti-minimi-of-right-hand",
+    "displayName": "Opponens digiti minimi of right hand",
+    "system": "muscular",
+    "filePath": "/models/muscular/opponens-digiti-minimi-of-right-hand.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-abductor-hallucis",
+    "displayName": "Right abductor hallucis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-abductor-hallucis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-abductor-pollicis-brevis",
+    "displayName": "Right abductor pollicis brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-abductor-pollicis-brevis.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-abductor-pollicis-longus",
+    "displayName": "Right abductor pollicis longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-abductor-pollicis-longus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-adductor-minimus",
+    "displayName": "Right adductor minimus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-adductor-minimus.glb",
+    "defaultColor": "#a34c48",
+    "defaultOpacity": 0.94
   }
 ]
