@@ -6398,5 +6398,101 @@
     "filePath": "/models/skeletal/intervertebral-disk-of-axis.glb",
     "defaultColor": "#aeb8b2",
     "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-testis",
+    "displayName": "Right testis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/right-testis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-testis",
+    "displayName": "Left testis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/left-testis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-epididymis",
+    "displayName": "Right epididymis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/right-epididymis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-epididymis",
+    "displayName": "Left epididymis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/left-epididymis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-deferent-duct",
+    "displayName": "Right deferent duct",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/right-deferent-duct.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-deferent-duct",
+    "displayName": "Left deferent duct",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/left-deferent-duct.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "prostate",
+    "displayName": "Prostate",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/prostate.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-seminal-vesicle",
+    "displayName": "Right seminal vesicle",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/right-seminal-vesicle.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-seminal-vesicle",
+    "displayName": "Left seminal vesicle",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/left-seminal-vesicle.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "glans-penis",
+    "displayName": "Glans penis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/glans-penis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "corpus-spongiosum-of-penis",
+    "displayName": "Corpus spongiosum of penis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/corpus-spongiosum-of-penis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "corpus-cavernosum-of-penis",
+    "displayName": "Corpus cavernosum of penis",
+    "system": "reproductive",
+    "filePath": "/models/reproductive/corpus-cavernosum-of-penis.glb",
+    "defaultColor": "#b7809c",
+    "defaultOpacity": 0.95
   }
 ]
