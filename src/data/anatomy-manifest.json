@@ -2368,6 +2368,22 @@
     "defaultOpacity": 0.95
   },
   {
+    "id": "soft-palate",
+    "displayName": "Soft palate",
+    "system": "digestive",
+    "filePath": "/models/digestive/soft-palate.glb",
+    "defaultColor": "#c98177",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "uvula",
+    "displayName": "Uvula",
+    "system": "digestive",
+    "filePath": "/models/digestive/uvula.glb",
+    "defaultColor": "#b96f68",
+    "defaultOpacity": 0.95
+  },
+  {
     "id": "right-submandibular-gland",
     "displayName": "Right submandibular gland",
     "system": "digestive",
