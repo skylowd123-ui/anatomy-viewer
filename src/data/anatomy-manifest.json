@@ -768,6 +768,118 @@
     "defaultOpacity": 1
   },
   {
+    "id": "right-first-costal-cartilage",
+    "displayName": "Right first costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-first-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-second-costal-cartilage",
+    "displayName": "Right second costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-second-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-third-costal-cartilage",
+    "displayName": "Right third costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-third-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-fourth-costal-cartilage",
+    "displayName": "Right fourth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fourth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-fifth-costal-cartilage",
+    "displayName": "Right fifth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-fifth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-sixth-costal-cartilage",
+    "displayName": "Right sixth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-sixth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "right-seventh-costal-cartilage",
+    "displayName": "Right seventh costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/right-seventh-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-first-costal-cartilage",
+    "displayName": "Left first costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-first-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-second-costal-cartilage",
+    "displayName": "Left second costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-second-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-third-costal-cartilage",
+    "displayName": "Left third costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-third-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-fourth-costal-cartilage",
+    "displayName": "Left fourth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fourth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-fifth-costal-cartilage",
+    "displayName": "Left fifth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-fifth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-sixth-costal-cartilage",
+    "displayName": "Left sixth costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-sixth-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
+    "id": "left-seventh-costal-cartilage",
+    "displayName": "Left seventh costal cartilage",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/left-seventh-costal-cartilage.glb",
+    "defaultColor": "#c9d4c4",
+    "defaultOpacity": 1.0
+  },
+  {
     "id": "left-scaphoid",
     "displayName": "Left scaphoid",
     "system": "skeletal",
@@ -2014,6 +2126,14 @@
     "filePath": "/models/skeletal/body-of-sternum.glb",
     "defaultColor": "#e4dac0",
     "defaultOpacity": 1
+  },
+  {
+    "id": "xiphoid-process",
+    "displayName": "Xiphoid process",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/xiphoid-process.glb",
+    "defaultColor": "#e4dac0",
+    "defaultOpacity": 1.0
   },
   {
     "id": "manubrium",
