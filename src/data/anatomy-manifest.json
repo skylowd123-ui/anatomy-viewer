@@ -3134,5 +3134,197 @@
     "filePath": "/models/circulatory/marginal-branch-of-right-coronary-artery.glb",
     "defaultColor": "#b83f49",
     "defaultOpacity": 0.96
+  },
+  {
+    "id": "right-sternocleidomastoid",
+    "displayName": "Right sternocleidomastoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-sternocleidomastoid.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-sternocleidomastoid",
+    "displayName": "Left sternocleidomastoid",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-sternocleidomastoid.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ascending-part-of-right-trapezius",
+    "displayName": "Ascending part of right trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/ascending-part-of-right-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "ascending-part-of-left-trapezius",
+    "displayName": "Ascending part of left trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/ascending-part-of-left-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "transverse-part-of-right-trapezius",
+    "displayName": "Transverse part of right trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/transverse-part-of-right-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "transverse-part-of-left-trapezius",
+    "displayName": "Transverse part of left trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/transverse-part-of-left-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "descending-part-of-right-trapezius",
+    "displayName": "Descending part of right trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/descending-part-of-right-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "descending-part-of-left-trapezius",
+    "displayName": "Descending part of left trapezius",
+    "system": "muscular",
+    "filePath": "/models/muscular/descending-part-of-left-trapezius.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-external-oblique",
+    "displayName": "Right external oblique",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-external-oblique.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-external-oblique",
+    "displayName": "Left external oblique",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-external-oblique.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "clavicular-part-of-right-pectoralis-major",
+    "displayName": "Clavicular part of right pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/clavicular-part-of-right-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "clavicular-part-of-left-pectoralis-major",
+    "displayName": "Clavicular part of left pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/clavicular-part-of-left-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "sternocostal-part-of-right-pectoralis-major",
+    "displayName": "Sternocostal part of right pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/sternocostal-part-of-right-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "sternocostal-part-of-left-pectoralis-major",
+    "displayName": "Sternocostal part of left pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/sternocostal-part-of-left-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "abdominal-part-of-right-pectoralis-major",
+    "displayName": "Abdominal part of right pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/abdominal-part-of-right-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "abdominal-part-of-left-pectoralis-major",
+    "displayName": "Abdominal part of left pectoralis major",
+    "system": "muscular",
+    "filePath": "/models/muscular/abdominal-part-of-left-pectoralis-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-pectoralis-minor",
+    "displayName": "Right pectoralis minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-pectoralis-minor.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-pectoralis-minor",
+    "displayName": "Left pectoralis minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-pectoralis-minor.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-rhomboid-major",
+    "displayName": "Right rhomboid major",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-rhomboid-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rhomboid-major",
+    "displayName": "Left rhomboid major",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rhomboid-major.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-rhomboid-minor",
+    "displayName": "Right rhomboid minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-rhomboid-minor.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rhomboid-minor",
+    "displayName": "Left rhomboid minor",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rhomboid-minor.glb",
+    "defaultColor": "#9f4a46",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "external-intercostal-muscle",
+    "displayName": "External intercostal muscle",
+    "system": "muscular",
+    "filePath": "/models/muscular/external-intercostal-muscle.glb",
+    "defaultColor": "#8d4542",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "internal-intercostal-muscle",
+    "displayName": "Internal intercostal muscle",
+    "system": "muscular",
+    "filePath": "/models/muscular/internal-intercostal-muscle.glb",
+    "defaultColor": "#8d4542",
+    "defaultOpacity": 0.94
   }
 ]
