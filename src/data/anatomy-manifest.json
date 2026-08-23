@@ -6494,5 +6494,29 @@
     "filePath": "/models/reproductive/corpus-cavernosum-of-penis.glb",
     "defaultColor": "#b7809c",
     "defaultOpacity": 0.95
+  },
+  {
+    "id": "spleen",
+    "displayName": "Spleen",
+    "system": "lymphatic",
+    "filePath": "/models/lymphatic/spleen.glb",
+    "defaultColor": "#8faf79",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-lobe-of-thymus",
+    "displayName": "Right lobe of thymus",
+    "system": "lymphatic",
+    "filePath": "/models/lymphatic/right-lobe-of-thymus.glb",
+    "defaultColor": "#8faf79",
+    "defaultOpacity": 0.95
+  },
+  {
+    "id": "left-lobe-of-thymus",
+    "displayName": "Left lobe of thymus",
+    "system": "lymphatic",
+    "filePath": "/models/lymphatic/left-lobe-of-thymus.glb",
+    "defaultColor": "#8faf79",
+    "defaultOpacity": 0.95
   }
 ]
