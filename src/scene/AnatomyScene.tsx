@@ -1,6 +1,6 @@
 import { Html, Line, OrbitControls } from '@react-three/drei'
 import { Canvas, ThreeEvent, useFrame, useThree } from '@react-three/fiber'
-import { ComponentProps, useEffect, useMemo, useRef, useState } from 'react'
+import { ComponentProps, useCallback, useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
@@ -24,33 +24,48 @@ const draco = new DRACOLoader().setDecoderPath(resolveAsset('/draco/'))
 const loader = new GLTFLoader().setDRACOLoader(draco)
 const modelCache = new Map<string, Promise<THREE.Group>>()
 
+type LoadPhase = 'loading' | 'ready' | 'failed'
+type LoadReport = { id: string; generation: number; phase: LoadPhase }
+
 function loadModel(path: string) {
   const url = resolveAsset(path)
-  if (!modelCache.has(url)) {
-    modelCache.set(url, new Promise((resolve, reject) => loader.load(url, gltf => resolve(gltf.scene), undefined, reject)))
+  let request = modelCache.get(url)
+  if (!request) {
+    request = new Promise((resolve, reject) => loader.load(url, gltf => resolve(gltf.scene), undefined, reject))
+    modelCache.set(url, request)
+    // A transient failure must not poison the page-lifetime cache. A later
+    // mount can start a fresh request while successful decoded scenes remain cached.
+    void request.catch(() => {
+      if (modelCache.get(url) === request) modelCache.delete(url)
+    })
   }
-  return modelCache.get(url)!
+  return request
 }
 
-function StructureModel({ item, opacity, selected, matched, showLabel, onSelect, onReady }: {
-  item: Structure; opacity: number; selected: boolean; matched: boolean; showLabel: boolean
-  onSelect: (id: string) => void; onReady: (id: string) => void
+function StructureModel({ item, opacity, selected, matched, showLabel, generation, onSelect, onLoadReport }: {
+  item: Structure; opacity: number; selected: boolean; matched: boolean; showLabel: boolean; generation: number
+  onSelect: (id: string) => void; onLoadReport: (report: LoadReport) => void
 }) {
   const group = useRef<THREE.Group>(null)
+  const phase = useRef<LoadPhase>('loading')
+  const generationRef = useRef(generation)
+  generationRef.current = generation
   const [object, setObject] = useState<THREE.Group | null>(null)
   const [labelPoint, setLabelPoint] = useState<[number, number, number]>([0, 0, 0])
 
   useEffect(() => {
     let live = true
+    phase.current = 'loading'
+    setObject(null)
+    onLoadReport({ id: item.id, generation: generationRef.current, phase: 'loading' })
     loadModel(item.filePath).then(source => {
       if (!live) return
       const clone = source.clone(true)
       clone.traverse(child => {
         if (child instanceof THREE.Mesh) {
-          child.geometry = child.geometry.clone()
-          // Each loaded mesh owns its material instance. This prevents cached
-          // GLTF materials (and multi-material meshes) from sharing opacity
-          // state across structures or only updating the first instance.
+          // Object3D.clone intentionally shares immutable BufferGeometry with
+          // the cached source. Materials remain independent because selection,
+          // highlighting and opacity mutate them per mounted structure.
           child.material = Array.isArray(child.material)
             ? child.material.map(material => material.clone())
             : child.material.clone()
@@ -61,10 +76,29 @@ function StructureModel({ item, opacity, selected, matched, showLabel, onSelect,
       const center = bounds.getCenter(new THREE.Vector3())
       const size = bounds.getSize(new THREE.Vector3())
       setLabelPoint([center.x, center.y + size.y * .18, center.z])
-      setObject(clone); onReady(item.id)
-    }).catch(err => console.error(`Could not load ${item.filePath}`, err))
+      setObject(clone)
+    }).catch(err => {
+      if (!live) return
+      phase.current = 'failed'
+      onLoadReport({ id: item.id, generation: generationRef.current, phase: 'failed' })
+      console.error(`Could not load ${item.filePath}`, err)
+    })
     return () => { live = false }
-  }, [item.filePath, item.id, onReady])
+  }, [item.filePath, item.id, onLoadReport])
+
+  // Report ready only after React has committed the replacement clone. Reusing
+  // a cached source therefore cannot make progress complete before it is shown.
+  useEffect(() => {
+    if (!object) return
+    phase.current = 'ready'
+    onLoadReport({ id: item.id, generation, phase: 'ready' })
+  }, [object, item.id, generation, onLoadReport])
+
+  // Structures that stay mounted across a visible-set change register their
+  // actual current phase in the new generation without loading or cloning again.
+  useEffect(() => {
+    onLoadReport({ id: item.id, generation, phase: phase.current })
+  }, [item.id, generation, onLoadReport])
 
   useEffect(() => {
     object?.traverse(child => {
@@ -141,8 +175,7 @@ function CameraController({ request, readyVersion }: { request: Props['focusRequ
 }
 
 function SceneContents(props: Props) {
-  const [loaded, setLoaded] = useState<Set<string>>(() => new Set())
-  const [readyVersion, setReadyVersion] = useState(0)
+  const [statusVersion, setStatusVersion] = useState(0)
   // At exactly zero opacity, omit the structure from the scene graph rather
   // than merely drawing a transparent material. This guarantees that fully
   // hidden layers cannot participate in raycasting or affect depth/blending.
@@ -151,15 +184,57 @@ function SceneContents(props: Props) {
     props.layers[item.system].opacity * item.defaultOpacity > 0 &&
     (!props.isolateId || props.isolateId === item.id)
   )
-  const reportReady = useMemo(() => (id: string) => {
-    setLoaded(prev => { if (prev.has(id)) return prev; const next = new Set(prev); next.add(id); return next })
-    setReadyVersion(v => v + 1)
+  const visibleKey = visible.map(item => item.id).join('|')
+  const tracking = useRef<{ key: string; generation: number; statuses: Map<string, LoadPhase> }>({
+    key: visibleKey, generation: 0, statuses: new Map()
+  })
+  const queuedReports = useRef<LoadReport[]>([])
+  const reportFrame = useRef<number | null>(null)
+
+  // Start every changed visible set with a unique generation and fresh status.
+  // Still-mounted children re-register their phase; newly mounted children
+  // register loading. The monotonic ID rejects late reports if a set is hidden
+  // and then restored before its previous frame-batch has flushed.
+  if (tracking.current.key !== visibleKey) {
+    tracking.current = {
+      key: visibleKey,
+      generation: tracking.current.generation + 1,
+      statuses: new Map()
+    }
+  }
+  const generation = tracking.current.generation
+
+  const reportLoad = useCallback((report: LoadReport) => {
+    queuedReports.current.push(report)
+    if (reportFrame.current !== null) return
+    reportFrame.current = requestAnimationFrame(() => {
+      reportFrame.current = null
+      const reports = queuedReports.current
+      queuedReports.current = []
+      let changed = false
+      for (const next of reports) {
+        if (next.generation !== tracking.current.generation) continue
+        if (tracking.current.statuses.get(next.id) === next.phase) continue
+        tracking.current.statuses.set(next.id, next.phase)
+        changed = true
+      }
+      if (changed) setStatusVersion(version => version + 1)
+    })
+  }, [])
+
+  useEffect(() => () => {
+    if (reportFrame.current !== null) cancelAnimationFrame(reportFrame.current)
+    reportFrame.current = null
+    queuedReports.current = []
   }, [])
 
   useEffect(() => {
-    const loadedCount = visible.filter(item => loaded.has(item.id)).length
-    props.onLoadState({ loaded: loadedCount, total: visible.length, active: visible.length > 0 && loadedCount < visible.length })
-  }, [visible.map(v => v.id).join('|'), loaded, props.onLoadState])
+    const statuses = tracking.current.statuses
+    const loaded = visible.filter(item => statuses.get(item.id) === 'ready').length
+    const failed = visible.filter(item => statuses.get(item.id) === 'failed').length
+    const total = visible.length
+    props.onLoadState({ loaded, failed, total, active: total > 0 && loaded + failed < total })
+  }, [generation, statusVersion, props.onLoadState])
 
   return <>
     <color attach="background" args={['#111514']} />
@@ -172,14 +247,14 @@ function SceneContents(props: Props) {
 
     <group>
       {visible.map(item => <StructureModel key={item.id} item={item} opacity={props.layers[item.system].opacity * item.defaultOpacity}
-        selected={props.selectedId === item.id} matched={props.searchMatches.includes(item.id)}
-        showLabel={props.showNames && props.selectedId === item.id} onSelect={props.onSelect} onReady={reportReady} />)}
+        selected={props.selectedId === item.id} matched={props.searchMatches.includes(item.id)} generation={generation}
+        showLabel={props.showNames && props.selectedId === item.id} onSelect={props.onSelect} onLoadReport={reportLoad} />)}
     </group>
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -.18, 0]} receiveShadow>
       <circleGeometry args={[5.5, 64]} /><meshStandardMaterial color="#161b19" roughness={.94} transparent opacity={.78} />
     </mesh>
     <gridHelper args={[10, 20, '#29312f', '#202624']} position={[0, -.17, 0]} />
-    <CameraController request={props.focusRequest} readyVersion={readyVersion} />
+    <CameraController request={props.focusRequest} readyVersion={statusVersion} />
   </>
 }
 

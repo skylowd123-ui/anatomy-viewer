@@ -15,4 +15,4 @@ export interface Structure {
 }
 
 export type LayerState = Record<SystemId, { visible: boolean; opacity: number }>
-export type LoadState = { loaded: number; total: number; active: boolean }
+export type LoadState = { loaded: number; failed: number; total: number; active: boolean }

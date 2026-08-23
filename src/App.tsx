@@ -27,7 +27,7 @@ function App() {
   const [panelOpen, setPanelOpen] = useState(true)
   const [mobileSheet, setMobileSheet] = useState(false)
   const [focusRequest, setFocusRequest] = useState<{ id: string | null; nonce: number }>({ id: null, nonce: 0 })
-  const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, total: 0, active: false })
+  const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, failed: 0, total: 0, active: false })
 
   const selected = manifest.find(item => item.id === selectedId) ?? null
   const matches = useMemo(() => {
@@ -116,7 +116,11 @@ function App() {
         </Suspense>
         <div className="orientation"><span>A</span><i /><span>P</span></div>
         <div className="view-caption"><span className="live-dot" />ANTERIOR VIEW</div>
-        {loadState.active && <div className="loading-card"><div><CircleDot size={15} /><span>Streaming anatomy</span><b>{loadState.loaded}/{loadState.total}</b></div><progress value={loadState.loaded} max={Math.max(1, loadState.total)} /></div>}
+        {(loadState.active || loadState.failed > 0) && <div className={`loading-card ${loadState.failed ? 'has-errors' : ''}`} role="status" aria-live="polite">
+          <div><CircleDot size={15} /><span>{loadState.active ? 'Streaming anatomy' : 'Anatomy loaded with errors'}</span><b>{loadState.loaded}/{loadState.total}</b></div>
+          <progress value={loadState.loaded + loadState.failed} max={Math.max(1, loadState.total)} />
+          {loadState.failed > 0 && <small>{loadState.failed} {loadState.failed === 1 ? 'structure' : 'structures'} failed to load</small>}
+        </div>}
 
         <div className="name-key glass-card">
           <div><span className="key-icon"><Eye size={17} /></span><span><b>Show names on click</b><small>{showNames ? 'Labels and answers are visible' : 'Quiz mode — answers hidden'}</small></span></div>
