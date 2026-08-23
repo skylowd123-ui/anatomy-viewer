@@ -6222,5 +6222,181 @@
     "filePath": "/models/skeletal/left-long-plantar-ligament.glb",
     "defaultColor": "#c9d4c4",
     "defaultOpacity": 1.0
+  },
+  {
+    "id": "intervertebral-disk-of-first-thoracic-vertebra",
+    "displayName": "Intervertebral disk of first thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-first-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-second-thoracic-vertebra",
+    "displayName": "Intervertebral disk of second thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-second-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-third-thoracic-vertebra",
+    "displayName": "Intervertebral disk of third thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-third-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fourth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of fourth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fourth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fifth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of fifth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fifth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-sixth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of sixth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-sixth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-seventh-thoracic-vertebra",
+    "displayName": "Intervertebral disk of seventh thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-seventh-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-eighth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of eighth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-eighth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-ninth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of ninth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-ninth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-tenth-thoracic-vertebra",
+    "displayName": "Intervertebral disk of tenth thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-tenth-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-eleventh-thoracic-vertebra",
+    "displayName": "Intervertebral disk of eleventh thoracic vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-eleventh-thoracic-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-third-cervical-vertebra",
+    "displayName": "Intervertebral disk of third cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-third-cervical-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fourth-cervical-vertebra",
+    "displayName": "Intervertebral disk of fourth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fourth-cervical-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fifth-cervical-vertebra",
+    "displayName": "Intervertebral disk of fifth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fifth-cervical-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-sixth-cervical-vertebra",
+    "displayName": "Intervertebral disk of sixth cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-sixth-cervical-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-seventh-cervical-vertebra",
+    "displayName": "Intervertebral disk of seventh cervical vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-seventh-cervical-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-first-lumbar-vertebra",
+    "displayName": "Intervertebral disk of first lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-first-lumbar-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-second-lumbar-vertebra",
+    "displayName": "Intervertebral disk of second lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-second-lumbar-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-third-lumbar-vertebra",
+    "displayName": "Intervertebral disk of third lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-third-lumbar-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fourth-lumbar-vertebra",
+    "displayName": "Intervertebral disk of fourth lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fourth-lumbar-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-fifth-lumbar-vertebra",
+    "displayName": "Intervertebral disk of fifth lumbar vertebra",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-fifth-lumbar-vertebra.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "intervertebral-disk-of-axis",
+    "displayName": "Intervertebral disk of axis",
+    "system": "skeletal",
+    "filePath": "/models/skeletal/intervertebral-disk-of-axis.glb",
+    "defaultColor": "#aeb8b2",
+    "defaultOpacity": 0.96
   }
 ]
