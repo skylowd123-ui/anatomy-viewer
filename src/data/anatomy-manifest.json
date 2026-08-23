@@ -6518,5 +6518,37 @@
     "filePath": "/models/lymphatic/left-lobe-of-thymus.glb",
     "defaultColor": "#8faf79",
     "defaultOpacity": 0.95
+  },
+  {
+    "id": "right-adrenal-gland",
+    "displayName": "Right adrenal gland",
+    "system": "endocrine",
+    "filePath": "/models/endocrine/right-adrenal-gland.glb",
+    "defaultColor": "#c29a65",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "left-adrenal-gland",
+    "displayName": "Left adrenal gland",
+    "system": "endocrine",
+    "filePath": "/models/endocrine/left-adrenal-gland.glb",
+    "defaultColor": "#c29a65",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pituitary-gland",
+    "displayName": "Pituitary gland",
+    "system": "endocrine",
+    "filePath": "/models/endocrine/pituitary-gland.glb",
+    "defaultColor": "#c29a65",
+    "defaultOpacity": 0.96
+  },
+  {
+    "id": "pineal-body",
+    "displayName": "Pineal body",
+    "system": "endocrine",
+    "filePath": "/models/endocrine/pineal-body.glb",
+    "defaultColor": "#c29a65",
+    "defaultOpacity": 0.96
   }
 ]
