@@ -69,7 +69,14 @@ function StructureModel({ item, opacity, selected, matched, showLabel, generatio
           child.material = Array.isArray(child.material)
             ? child.material.map(material => material.clone())
             : child.material.clone()
-          child.castShadow = true; child.receiveShadow = true
+          // Mesh.raycast already performs a bounding-sphere test. Supplying the
+          // geometry box adds a cheap second rejection before triangle tests.
+          if (!child.geometry.boundingBox) child.geometry.computeBoundingBox()
+          // The muscular layer alone contains 384 shadow casters. Its shadow is
+          // only visible on the ground plane and does not improve surface form,
+          // which remains defined by the directional and hemisphere lighting.
+          child.castShadow = item.system !== 'muscular'
+          child.receiveShadow = true
         }
       })
       const bounds = new THREE.Box3().setFromObject(clone)
@@ -258,8 +265,29 @@ function SceneContents(props: Props) {
   </>
 }
 
+function useDeviceDpr(): [number, number] {
+  const getCap = () => {
+    const nav = navigator as Navigator & { deviceMemory?: number; connection?: { saveData?: boolean } }
+    const mobile = window.matchMedia('(max-width: 850px), (pointer: coarse)').matches
+    const constrained = mobile || (nav.hardwareConcurrency > 0 && nav.hardwareConcurrency <= 4) ||
+      (nav.deviceMemory !== undefined && nav.deviceMemory <= 4) || nav.connection?.saveData === true
+    return constrained ? 1.35 : 1.8
+  }
+  const [cap, setCap] = useState(getCap)
+
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 850px), (pointer: coarse)')
+    const update = () => setCap(getCap())
+    query.addEventListener('change', update)
+    return () => query.removeEventListener('change', update)
+  }, [])
+
+  return [1, cap]
+}
+
 export default function AnatomyScene(props: Props) {
-  return <Canvas shadows dpr={[1, 1.8]} camera={{ position: [4.5, 2.35, 7.2], fov: 38, near: .05, far: 100 }}
+  const dpr = useDeviceDpr()
+  return <Canvas shadows dpr={dpr} camera={{ position: [4.5, 2.35, 7.2], fov: 38, near: .05, far: 100 }}
     gl={{ antialias: true, alpha: false, powerPreference: 'high-performance', toneMapping: THREE.ACESFilmicToneMapping }}
     onPointerMissed={() => props.onSelect(null)}>
     <SceneContents {...props} />
