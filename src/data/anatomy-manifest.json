@@ -3710,5 +3710,405 @@
     "filePath": "/models/muscular/ulnar-head-of-left-pronator-teres.glb",
     "defaultColor": "#a34c48",
     "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-gluteus-maximus",
+    "displayName": "Right gluteus maximus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-gluteus-maximus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-gluteus-maximus",
+    "displayName": "Left gluteus maximus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-gluteus-maximus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-gluteus-medius",
+    "displayName": "Right gluteus medius",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-gluteus-medius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-gluteus-medius",
+    "displayName": "Left gluteus medius",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-gluteus-medius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-gluteus-minimus",
+    "displayName": "Right gluteus minimus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-gluteus-minimus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-gluteus-minimus",
+    "displayName": "Left gluteus minimus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-gluteus-minimus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-iliacus",
+    "displayName": "Right iliacus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-iliacus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-iliacus",
+    "displayName": "Left iliacus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-iliacus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-psoas-major",
+    "displayName": "Right psoas major",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-psoas-major.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-psoas-major",
+    "displayName": "Left psoas major",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-psoas-major.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-rectus-femoris",
+    "displayName": "Right rectus femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-rectus-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-rectus-femoris",
+    "displayName": "Left rectus femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-rectus-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-vastus-lateralis",
+    "displayName": "Right vastus lateralis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-vastus-lateralis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-vastus-lateralis",
+    "displayName": "Left vastus lateralis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-vastus-lateralis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-vastus-medialis",
+    "displayName": "Right vastus medialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-vastus-medialis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-vastus-medialis",
+    "displayName": "Left vastus medialis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-vastus-medialis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-vastus-intermedius",
+    "displayName": "Right vastus intermedius",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-vastus-intermedius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-vastus-intermedius",
+    "displayName": "Left vastus intermedius",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-vastus-intermedius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-right-biceps-femoris",
+    "displayName": "Long head of right biceps femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-right-biceps-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "long-head-of-left-biceps-femoris",
+    "displayName": "Long head of left biceps femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/long-head-of-left-biceps-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "short-head-of-right-biceps-femoris",
+    "displayName": "Short head of right biceps femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/short-head-of-right-biceps-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "short-head-of-left-biceps-femoris",
+    "displayName": "Short head of left biceps femoris",
+    "system": "muscular",
+    "filePath": "/models/muscular/short-head-of-left-biceps-femoris.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-semitendinosus",
+    "displayName": "Right semitendinosus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-semitendinosus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-semitendinosus",
+    "displayName": "Left semitendinosus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-semitendinosus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-semimembranosus",
+    "displayName": "Right semimembranosus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-semimembranosus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-semimembranosus",
+    "displayName": "Left semimembranosus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-semimembranosus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-adductor-longus",
+    "displayName": "Right adductor longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-adductor-longus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-adductor-longus",
+    "displayName": "Left adductor longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-adductor-longus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-adductor-magnus",
+    "displayName": "Right adductor magnus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-adductor-magnus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-adductor-magnus",
+    "displayName": "Left adductor magnus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-adductor-magnus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-adductor-brevis",
+    "displayName": "Right adductor brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-adductor-brevis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-adductor-brevis",
+    "displayName": "Left adductor brevis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-adductor-brevis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-pectineus",
+    "displayName": "Right pectineus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-pectineus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-pectineus",
+    "displayName": "Left pectineus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-pectineus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-gracilis",
+    "displayName": "Right gracilis",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-gracilis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-gracilis",
+    "displayName": "Left gracilis",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-gracilis.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-sartorius",
+    "displayName": "Right sartorius",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-sartorius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-sartorius",
+    "displayName": "Left sartorius",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-sartorius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-tensor-fasciae-latae",
+    "displayName": "Right tensor fasciae latae",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-tensor-fasciae-latae.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-tensor-fasciae-latae",
+    "displayName": "Left tensor fasciae latae",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-tensor-fasciae-latae.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-right-gastrocnemius",
+    "displayName": "Medial head of right gastrocnemius",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-right-gastrocnemius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "medial-head-of-left-gastrocnemius",
+    "displayName": "Medial head of left gastrocnemius",
+    "system": "muscular",
+    "filePath": "/models/muscular/medial-head-of-left-gastrocnemius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "lateral-head-of-right-gastrocnemius",
+    "displayName": "Lateral head of right gastrocnemius",
+    "system": "muscular",
+    "filePath": "/models/muscular/lateral-head-of-right-gastrocnemius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "lateral-head-of-left-gastrocnemius",
+    "displayName": "Lateral head of left gastrocnemius",
+    "system": "muscular",
+    "filePath": "/models/muscular/lateral-head-of-left-gastrocnemius.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-soleus",
+    "displayName": "Right soleus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-soleus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-soleus",
+    "displayName": "Left soleus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-soleus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-tibialis-anterior",
+    "displayName": "Right tibialis anterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-tibialis-anterior.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-tibialis-anterior",
+    "displayName": "Left tibialis anterior",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-tibialis-anterior.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "right-fibularis-longus",
+    "displayName": "Right fibularis longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/right-fibularis-longus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
+  },
+  {
+    "id": "left-fibularis-longus",
+    "displayName": "Left fibularis longus",
+    "system": "muscular",
+    "filePath": "/models/muscular/left-fibularis-longus.glb",
+    "defaultColor": "#a64d49",
+    "defaultOpacity": 0.94
   }
 ]
