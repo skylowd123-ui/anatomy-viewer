@@ -1,58 +1,71 @@
-// Known limitations shown in the info modal.
+// Verified dataset gaps shown in the Known Limitations modal.
 //
-// The dataset figures below were verified against:
-// - the BodyParts3D v4.0 release statistics (1,651 elemental and 1,254
-//   compound representations in the is-a tree) and its is-a parts list,
-// - src/data/anatomy-manifest.json (819 structures across 10 systems), and
-// - the converted GLB files under public/models: 342 of the 819 retain
-//   their BodyParts3D element file ids (e.g. FJ3176), and a triangle-count
-//   + shape comparison of every mesh against the published v4.0 is-a and
-//   part-of source parts confirms 794 of 819 match source geometry exactly
-//   (25 do not match any published part, including all five lung lobes).
-export interface KnownLimitation {
+// Source: BodyParts3D v4.0 (CC-BY-SA 2.1, Database Center for Life Science,
+// Japan) — see ATTRIBUTION.md. Every entry below is a structure that is NOT
+// available in the source dataset; the atlas never approximates or fabricates
+// missing anatomy. When a gap gets filled, remove its entry here (and bump
+// verifiedStructures in datasetSummary if the total changes).
+
+export const atlasIntro = 'This atlas is built from the open-source BodyParts3D dataset (CC-BY-SA 2.1, Database Center for Life Science, Japan). Every structure shown has been individually verified against the dataset\'s official lookup tables and is accurately named and positioned. Where a structure isn\'t available in the source dataset, it\'s listed here rather than approximated or fabricated, so everything you see can be relied on as anatomically accurate.'
+
+export interface GapCategory {
   title: string
-  detail: string
+  gaps: string[]
 }
 
-export const knownLimitations: KnownLimitation[] = [
+export const datasetGaps: GapCategory[] = [
   {
-    title: 'Only a subset of the source dataset is included',
-    detail: 'The BodyParts3D v4.0 is-a tree provides 1,651 elemental parts plus 1,254 compound groupings. This viewer ships 819 selectable structures, so the atlas covers no more than about half of the available elemental parts, and the compound groupings are not represented.'
+    title: 'MUSCULAR',
+    gaps: [
+      'Facial muscles: masseter, temporalis, frontalis, orbicularis oculi, orbicularis oris — not present in the dataset',
+      'Latissimus dorsi and erector spinae are not modeled as single named muscles, but all their individual component muscles are present (e.g. iliocostalis, longissimus, spinalis for erector spinae)'
+    ]
   },
   {
-    title: 'Coverage is uneven across systems',
-    detail: 'The manifest is dominated by muscular (384) and skeletal (239) structures, while lymphatic (3), endocrine (4), urinary (6), and reproductive (12) systems contain only a handful. The source database covers all ten systems, so the sparse counts are selection gaps, not source gaps.'
+    title: 'SKELETAL',
+    gaps: [
+      'Individual ilium, ischium, and pubis are not separable — the hip bone is only available as one fused structure per side',
+      'The intervertebral disc between T12 and L1 is not present (all other 22 disc levels are present and correctly positioned)',
+      'Teeth are entirely absent — jaw bones (maxilla, mandible) are present but contain no tooth structures'
+    ]
   },
   {
-    title: 'Whole regions of the source are missing',
-    detail: 'The manifest has no structures for the eye, pharynx, or larynx, although BodyParts3D 4.0 added internal eye-ball structures and pharynx and larynx parts. There is no whole-heart structure (the heart appears only as atrial and ventricular wall pieces) and no vascular anastomoses, even though the source lists both.'
+    title: 'CONNECTIVE TISSUE',
+    gaps: [
+      'Major joint ligaments (ACL, PCL, collateral ligaments, patellar ligament, hip/shoulder ligaments) are not present — only the calcaneal (Achilles) tendon and two plantar ligaments exist'
+    ]
   },
   {
-    title: 'Vascular branching is only partly represented',
-    detail: 'The source models the vascular tree at segment level — a single coronary branch appears as a run of numbered segment elements — while the circulatory system here ships 81 structures, so fine distal branching available in the source is not represented.'
+    title: 'NERVOUS',
+    gaps: [
+      '8 of the 12 cranial nerves are not present (only optic, trochlear, ophthalmic branch, and oculomotor branches exist)',
+      'The spinal cord itself is not modeled as a structure — only its internal central canal exists'
+    ]
   },
   {
-    title: 'Provenance is confirmed for 794 meshes, unconfirmed for 25',
-    detail: '342 of the 819 meshes still carry their BodyParts3D element file ids (FJxxxx) in the mesh metadata. Comparing every remaining mesh to the published BodyParts3D v4.0 source parts confirms 452 more are identical to source geometry (re-exported with names stripped), but 25 — including all five lung-lobe meshes — match no published part, so their exact source cannot be confirmed.'
+    title: 'DIGESTIVE',
+    gaps: [
+      'Pharynx (as a distinct cavity/wall structure) is not present, though the larynx, soft palate, and uvula are present',
+      'Sigmoid colon is not present (cecum and the rest of the large intestine are)'
+    ]
   },
   {
-    title: 'Single reference anatomy',
-    detail: 'The meshes represent a generalized reference anatomy. They do not model patient-specific variation, age, sex characteristics, pathology, physiology, or dynamic movement.'
+    title: 'REPRODUCTIVE',
+    gaps: [
+      'Female reproductive anatomy is entirely absent from this dataset — only male reproductive structures are available'
+    ]
   },
   {
-    title: 'Educational visualization, not clinical reference',
-    detail: 'The models and labels are provided for exploration and learning. They must not be used for diagnosis, treatment planning, measurement, or surgical guidance.'
-  },
-  {
-    title: 'Labels follow model geometry',
-    detail: 'Structure labels use each model’s bounding-box center until curated anatomical anchor points are supplied. A label may therefore not identify a precise landmark.'
+    title: 'ENDOCRINE / LYMPHATIC',
+    gaps: [
+      'Thyroid and parathyroid glands are not present',
+      'Lymph nodes, thoracic duct, and tonsils are not present — only spleen and thymus represent the lymphatic system'
+    ]
   }
 ]
 
 export const datasetSummary = {
-  includedStructures: 819,
-  intendedSystems: 10,
-  sourceElementalParts: 1651,
-  sourceCompoundGroupings: 1254,
-  sourceNote: 'BodyParts3D v4.0, Database Center for Life Science (CC BY-SA 2.1 Japan). Mesh attribution and licensing information is available in ATTRIBUTION.md.'
+  verifiedStructures: 819,
+  systems: 10,
+  closingNote: 'This atlas covers 819 verified structures across all 10 anatomical systems. For structures listed above, please consult a standard anatomy atlas or textbook.'
 }

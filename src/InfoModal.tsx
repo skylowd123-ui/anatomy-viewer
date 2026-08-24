@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import { AlertTriangle, Database, X } from 'lucide-react'
-import { datasetSummary, knownLimitations } from './data/known-limitations'
+import { CircleMinus, X } from 'lucide-react'
+import { atlasIntro, datasetGaps, datasetSummary } from './data/known-limitations'
 
 interface InfoModalProps {
   open: boolean
@@ -24,23 +24,19 @@ function InfoModal({ open, onClose }: InfoModalProps) {
       <button className="card-close" onClick={onClose} aria-label="Close known limitations"><X size={18} /></button>
       <span className="eyebrow">DATASET STATUS</span>
       <h2 id="limitations-title">Known limitations</h2>
-      <p className="info-modal-intro">Anatomica is a working viewer over a demonstration subset of the BodyParts3D dataset. The gaps below were verified against the source database and the shipped manifest.</p>
+      <p className="info-modal-intro">{atlasIntro}</p>
 
-      <div className="dataset-summary" aria-label="Dataset summary">
-        <Database size={19} />
-        <div>
-          <b>{datasetSummary.includedStructures} demo structures across {datasetSummary.intendedSystems} planned systems</b>
-          <span>{datasetSummary.sourceElementalParts} elemental parts and {datasetSummary.sourceCompoundGroupings} compound groupings are available in the BodyParts3D v4.0 source</span>
-        </div>
-      </div>
+      {datasetGaps.map(category => <div key={category.title} style={{ marginTop: 18 }}>
+        <span className="eyebrow">{category.title}</span>
+        <ul className="limitations-list">
+          {category.gaps.map(gap => <li key={gap}>
+            <CircleMinus size={16} aria-hidden="true" />
+            <p>{gap}</p>
+          </li>)}
+        </ul>
+      </div>)}
 
-      <ul className="limitations-list">
-        {knownLimitations.map(limitation => <li key={limitation.title}>
-          <AlertTriangle size={16} aria-hidden="true" />
-          <div><h3>{limitation.title}</h3><p>{limitation.detail}</p></div>
-        </li>)}
-      </ul>
-      <p className="source-note">{datasetSummary.sourceNote}</p>
+      <p className="info-modal-intro" style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(218, 200, 154, 0.18)' }}>{datasetSummary.closingNote}</p>
     </section>
   </div>
 }
