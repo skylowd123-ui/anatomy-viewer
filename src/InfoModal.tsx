@@ -24,11 +24,14 @@ function InfoModal({ open, onClose }: InfoModalProps) {
       <button className="card-close" onClick={onClose} aria-label="Close known limitations"><X size={18} /></button>
       <span className="eyebrow">DATASET STATUS</span>
       <h2 id="limitations-title">Known limitations</h2>
-      <p className="info-modal-intro">Anatomica is currently a working viewer shell with a deliberately small demonstration dataset.</p>
+      <p className="info-modal-intro">Anatomica is a working viewer over a demonstration subset of the BodyParts3D dataset. The gaps below were verified against the source database and the shipped manifest.</p>
 
       <div className="dataset-summary" aria-label="Dataset summary">
         <Database size={19} />
-        <div><b>{datasetSummary.includedStructures} demo structures</b><span>across {datasetSummary.intendedSystems} planned systems</span></div>
+        <div>
+          <b>{datasetSummary.includedStructures} demo structures across {datasetSummary.intendedSystems} planned systems</b>
+          <span>{datasetSummary.sourceElementalParts} elemental parts and {datasetSummary.sourceCompoundGroupings} compound groupings are available in the BodyParts3D v4.0 source</span>
+        </div>
       </div>
 
       <ul className="limitations-list">
