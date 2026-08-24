@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
 import { CircleMinus, X } from 'lucide-react'
-import { atlasIntro, datasetGaps, datasetSummary } from './data/known-limitations'
+import { AtlasStats, atlasIntro, datasetGaps } from './data/known-limitations'
 
 interface InfoModalProps {
   open: boolean
   onClose: () => void
+  stats: AtlasStats
 }
 
-function InfoModal({ open, onClose }: InfoModalProps) {
+function InfoModal({ open, onClose, stats }: InfoModalProps) {
   useEffect(() => {
     if (!open) return
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -36,7 +37,9 @@ function InfoModal({ open, onClose }: InfoModalProps) {
         </ul>
       </div>)}
 
-      <p className="info-modal-intro" style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(218, 200, 154, 0.18)' }}>{datasetSummary.closingNote}</p>
+      <p className="info-modal-intro" style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(218, 200, 154, 0.18)' }}>
+        This atlas covers {stats.structures.toLocaleString()} verified structures across all {stats.systems} anatomical systems. For structures listed above, please consult a standard anatomy atlas or textbook.
+      </p>
     </section>
   </div>
 }

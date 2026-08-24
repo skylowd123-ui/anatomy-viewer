@@ -1,10 +1,13 @@
 import { lazy, Suspense, useMemo, useState } from 'react'
-import { Activity, Bone, ChevronDown, CircleDot, Eye, EyeOff, HeartPulse, Info, Layers3, LocateFixed, Menu, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, X } from 'lucide-react'
+import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, X } from 'lucide-react'
 import manifestData from './data/anatomy-manifest.json'
 import InfoModal from './InfoModal'
-import { LayerState, LoadState, Structure, SYSTEMS, SystemId } from './types'
+import { atlasStats } from './data/known-limitations'
+import { LayerState, LoadState, PanelView, Structure, SYSTEMS, SystemId } from './types'
 
 const AnatomyScene = lazy(() => import('./scene/AnatomyScene'))
+const About = lazy(() => import('./About'))
+const Contact = lazy(() => import('./Contact'))
 const manifest = manifestData as Structure[]
 
 const systemMeta: Record<SystemId, { label: string; color: string }> = {
@@ -27,11 +30,13 @@ function App() {
   const [isolateId, setIsolateId] = useState<string | null>(null)
   const [panelOpen, setPanelOpen] = useState(true)
   const [mobileSheet, setMobileSheet] = useState(false)
+  const [panelView, setPanelView] = useState<PanelView | null>(null)
   const [infoOpen, setInfoOpen] = useState(false)
   const [focusRequest, setFocusRequest] = useState<{ id: string | null; nonce: number }>({ id: null, nonce: 0 })
   const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, failed: 0, total: 0, active: false })
 
   const selected = manifest.find(item => item.id === selectedId) ?? null
+  const stats = useMemo(() => atlasStats(manifest), [])
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase()
     return q ? manifest.filter(item => item.displayName.toLowerCase().includes(q) || item.system.includes(q)) : []
@@ -41,6 +46,10 @@ function App() {
   const setOpacity = (system: SystemId, opacity: number) => setLayers(prev => ({ ...prev, [system]: { ...prev[system], opacity } }))
   const select = (id: string | null) => { setSelectedId(id); if (!id) setIsolateId(null) }
   const focus = (id: string | null) => setFocusRequest({ id, nonce: Date.now() })
+
+  const togglePanelView = (view: PanelView) => setPanelView(prev => (prev === view ? null : view))
+  const openSystemsSheet = () => { setPanelView('systems'); setMobileSheet(true) }
+  const openLimitations = () => { setPanelView('systems'); setMobileSheet(false); setInfoOpen(true) }
 
   const chooseSearchResult = (item: Structure) => {
     setLayers(prev => ({ ...prev, [item.system]: { ...prev[item.system], visible: true } }))
@@ -64,7 +73,7 @@ function App() {
 
   return <main className="app-shell">
     <header className="topbar">
-      <button className="icon-button mobile-only" onClick={() => setMobileSheet(true)} aria-label="Open anatomy layers"><Menu /></button>
+      <button className="icon-button mobile-only" onClick={() => setMobileSheet(true)} aria-label="Open navigation menu"><Menu /></button>
       <div className="brand"><span className="brand-mark"><Activity size={18} /></span><span>ANATOMICA</span><small>INTERACTIVE HUMAN ATLAS</small></div>
       <div className="search-wrap">
         <Search size={17} />
@@ -83,26 +92,60 @@ function App() {
     </header>
 
     <section className="workspace">
-      <aside className={`layer-panel ${panelOpen ? '' : 'collapsed'} ${mobileSheet ? 'mobile-open' : ''}`}>
+      <aside className={`layer-panel ${panelOpen ? '' : 'collapsed'} ${mobileSheet ? 'mobile-open' : ''}`} aria-label="Navigation">
         <div className="panel-heading">
-          <div><span className="eyebrow">EXPLORE</span><h2>Anatomical systems</h2></div>
-          <button className="icon-button mobile-close" onClick={() => setMobileSheet(false)}><X /></button>
+          <div><span className="eyebrow">NAVIGATE</span><h2>Menu</h2></div>
+          <button className="icon-button mobile-close" onClick={() => setMobileSheet(false)} aria-label="Close menu"><X /></button>
         </div>
-        <p className="panel-intro">Reveal layers and tune their visibility.</p>
-        <div className="layer-list">
-          {SYSTEMS.map(system => {
-            const count = manifest.filter(s => s.system === system).length
-            const state = layers[system]
-            return <div className={`layer-row ${state.visible ? 'active' : ''}`} key={system}>
-              <button className="layer-toggle" onClick={() => toggleLayer(system)} aria-pressed={state.visible}>
-                <span className="system-dot" style={{ '--system-color': systemMeta[system].color } as React.CSSProperties}>{state.visible ? <Eye size={15} /> : <EyeOff size={15} />}</span>
-                <span><b>{systemMeta[system].label}</b><small>{count ? `${count} ${count === 1 ? 'structure' : 'structures'}` : 'Awaiting models'}</small></span>
-                <ChevronDown size={15} />
-              </button>
-              {state.visible && <div className="opacity-row"><span>Opacity</span><input type="range" min="0" max="1" step="0.01" value={state.opacity} onChange={e => setOpacity(system, Number(e.target.value))} /><output>{Math.round(state.opacity * 100)}%</output></div>}
-            </div>
-          })}
-        </div>
+
+        <nav className="panel-nav">
+          <div className={`nav-item ${panelView === 'systems' ? 'open' : ''}`}>
+            <button className="nav-toggle" onClick={() => togglePanelView('systems')} aria-expanded={panelView === 'systems'} aria-controls="nav-systems">
+              <span className="system-dot" style={{ '--system-color': '#cfb373' } as React.CSSProperties}><Layers3 size={15} /></span>
+              <span><b>Systems</b><small>{stats.structures.toLocaleString()} structures · {stats.systems} systems</small></span>
+              <ChevronDown className="nav-chevron" size={15} />
+            </button>
+            {panelView === 'systems' && <div className="nav-body" id="nav-systems" role="region" aria-label="Anatomical systems">
+              <div className="layer-list">
+                {SYSTEMS.map(system => {
+                  const count = manifest.filter(s => s.system === system).length
+                  const state = layers[system]
+                  return <div className={`layer-row ${state.visible ? 'active' : ''}`} key={system}>
+                    <button className="layer-toggle" onClick={() => toggleLayer(system)} aria-pressed={state.visible}>
+                      <span className="system-dot" style={{ '--system-color': systemMeta[system].color } as React.CSSProperties}>{state.visible ? <Eye size={15} /> : <EyeOff size={15} />}</span>
+                      <span><b>{systemMeta[system].label}</b><small>{count ? `${count} ${count === 1 ? 'structure' : 'structures'}` : 'Awaiting models'}</small></span>
+                      <ChevronDown size={15} />
+                    </button>
+                    {state.visible && <div className="opacity-row"><span>Opacity</span><input type="range" min="0" max="1" step="0.01" value={state.opacity} onChange={e => setOpacity(system, Number(e.target.value))} /><output>{Math.round(state.opacity * 100)}%</output></div>}
+                  </div>
+                })}
+              </div>
+            </div>}
+          </div>
+
+          <div className={`nav-item ${panelView === 'about' ? 'open' : ''}`}>
+            <button className="nav-toggle" onClick={() => togglePanelView('about')} aria-expanded={panelView === 'about'} aria-controls="nav-about">
+              <span className="system-dot" style={{ '--system-color': '#d6bb84' } as React.CSSProperties}><BookOpen size={15} /></span>
+              <span><b>About</b><small>What Anatomica is, and its data</small></span>
+              <ChevronDown className="nav-chevron" size={15} />
+            </button>
+            {panelView === 'about' && <div className="nav-body" id="nav-about">
+              <Suspense fallback={null}><About structures={stats.structures} systems={stats.systems} onShowLimitations={openLimitations} /></Suspense>
+            </div>}
+          </div>
+
+          <div className={`nav-item ${panelView === 'contact' ? 'open' : ''}`}>
+            <button className="nav-toggle" onClick={() => togglePanelView('contact')} aria-expanded={panelView === 'contact'} aria-controls="nav-contact">
+              <span className="system-dot" style={{ '--system-color': '#7fa8a0' } as React.CSSProperties}><Mail size={15} /></span>
+              <span><b>Contact</b><small>Report bugs, labels, or gaps</small></span>
+              <ChevronDown className="nav-chevron" size={15} />
+            </button>
+            {panelView === 'contact' && <div className="nav-body" id="nav-contact">
+              <Suspense fallback={null}><Contact /></Suspense>
+            </div>}
+          </div>
+        </nav>
+
         <div className="panel-footnote"><Sparkles size={14} /><span>Models load only when a system is revealed.</span></div>
       </aside>
 
@@ -141,11 +184,11 @@ function App() {
         {isolateId && <button className="isolate-banner" onClick={() => setIsolateId(null)}><Bone size={16} /> Isolate mode <span>Show all</span><X size={15} /></button>}
 
         <div className="scene-hint"><span><i className="mouse-icon" /> Drag to rotate</span><span>Scroll to zoom</span><span>Right-drag to pan</span></div>
-        <button className="mobile-layer-button mobile-only" onClick={() => setMobileSheet(true)}><Layers3 size={18} /> Systems</button>
+        <button className="mobile-layer-button mobile-only" onClick={openSystemsSheet}><Layers3 size={18} /> Systems</button>
         <button className="reset-fab" onClick={resetAll} title="Reset scene"><RotateCcw size={18} /></button>
       </div>
     </section>
-    <InfoModal open={infoOpen} onClose={() => setInfoOpen(false)} />
+    <InfoModal open={infoOpen} onClose={() => setInfoOpen(false)} stats={stats} />
   </main>
 }
 

@@ -16,3 +16,6 @@ export interface Structure {
 
 export type LayerState = Record<SystemId, { visible: boolean; opacity: number }>
 export type LoadState = { loaded: number; failed: number; total: number; active: boolean }
+
+/** Sections of the side/bottom navigation panel. */
+export type PanelView = 'systems' | 'about' | 'contact'
