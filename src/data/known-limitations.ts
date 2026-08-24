@@ -4,8 +4,11 @@
 // - the BodyParts3D v4.0 release statistics (1,651 elemental and 1,254
 //   compound representations in the is-a tree) and its is-a parts list,
 // - src/data/anatomy-manifest.json (819 structures across 10 systems), and
-// - the converted GLB files under public/models (342 of the 819 retain
-//   their BodyParts3D element file ids, e.g. FJ3176).
+// - the converted GLB files under public/models: 342 of the 819 retain
+//   their BodyParts3D element file ids (e.g. FJ3176), and a triangle-count
+//   + shape comparison of every mesh against the published v4.0 is-a and
+//   part-of source parts confirms 794 of 819 match source geometry exactly
+//   (25 do not match any published part, including all five lung lobes).
 export interface KnownLimitation {
   title: string
   detail: string
@@ -29,8 +32,8 @@ export const knownLimitations: KnownLimitation[] = [
     detail: 'The source models the vascular tree at segment level — a single coronary branch appears as a run of numbered segment elements — while the circulatory system here ships 81 structures, so fine distal branching available in the source is not represented.'
   },
   {
-    title: 'Provenance is incomplete for 477 meshes',
-    detail: '342 of the 819 converted meshes still carry their BodyParts3D element file ids (FJxxxx) in the mesh metadata. The remaining 477 were re-exported under generic node names and can only be traced to the source by file name.'
+    title: 'Provenance is confirmed for 794 meshes, unconfirmed for 25',
+    detail: '342 of the 819 meshes still carry their BodyParts3D element file ids (FJxxxx) in the mesh metadata. Comparing every remaining mesh to the published BodyParts3D v4.0 source parts confirms 452 more are identical to source geometry (re-exported with names stripped), but 25 — including all five lung-lobe meshes — match no published part, so their exact source cannot be confirmed.'
   },
   {
     title: 'Single reference anatomy',
