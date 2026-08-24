@@ -29,6 +29,7 @@ npm run preview
 - Isolate, focus, reset view, and clear selection
 - Streaming progress indicator
 - Desktop side panel and touch-friendly mobile bottom sheet
+- Navigation panel with Systems, About, and Contact sections (About/Contact are code-split and load only when opened)
 - Local Draco decoder support (no runtime CDN dependency)
 - Code-split 3D scene; the application shell loads first
 
@@ -38,7 +39,9 @@ npm run preview
 src/
   data/anatomy-manifest.json  # Data-driven structure registry
   scene/AnatomyScene.tsx      # Loader, raycasting, materials, labels, camera
-  App.tsx                     # Shell, state, search, panels
+  App.tsx                     # Shell, state, search, navigation panel
+  About.tsx                   # About section (lazy-loaded, in-panel)
+  Contact.tsx                 # Contact section (lazy-loaded, in-panel)
   styles.css                  # Responsive visual system
 public/
   models/<system>/*.glb       # Anatomy assets (generated after install for demo)

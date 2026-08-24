@@ -3,8 +3,26 @@
 // Source: BodyParts3D v4.0 (CC-BY-SA 2.1, Database Center for Life Science,
 // Japan) — see ATTRIBUTION.md. Every entry below is a structure that is NOT
 // available in the source dataset; the atlas never approximates or fabricates
-// missing anatomy. When a gap gets filled, remove its entry here (and bump
-// verifiedStructures in datasetSummary if the total changes).
+// missing anatomy. When a gap gets filled, remove its entry here.
+//
+// Structure/system counts shown anywhere in the UI (Known Limitations modal,
+// About section) are computed with atlasStats() from the live anatomy
+// manifest, so they never go stale.
+
+import type { Structure } from '../types'
+
+export interface AtlasStats {
+  structures: number
+  systems: number
+}
+
+/** Live counts derived from the anatomy manifest (819 structures / 10 systems). */
+export function atlasStats(manifest: Structure[]): AtlasStats {
+  return {
+    structures: manifest.length,
+    systems: new Set(manifest.map(item => item.system)).size
+  }
+}
 
 export const atlasIntro = 'This atlas is built from the open-source BodyParts3D dataset (CC-BY-SA 2.1, Database Center for Life Science, Japan). Every structure shown has been individually verified against the dataset\'s official lookup tables and is accurately named and positioned. Where a structure isn\'t available in the source dataset, it\'s listed here rather than approximated or fabricated, so everything you see can be relied on as anatomically accurate. Note: 342 of 819 shipped meshes retain traceable BodyParts3D source IDs in their file metadata; the remaining 477 do not carry this metadata but were converted through the same asset pipeline (five lung-lobe meshes were generated separately).'
 
@@ -63,9 +81,3 @@ export const datasetGaps: GapCategory[] = [
     ]
   }
 ]
-
-export const datasetSummary = {
-  verifiedStructures: 819,
-  systems: 10,
-  closingNote: 'This atlas covers 819 verified structures across all 10 anatomical systems. For structures listed above, please consult a standard anatomy atlas or textbook.'
-}
