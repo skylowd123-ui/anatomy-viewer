@@ -1,6 +1,7 @@
 import { lazy, Suspense, useMemo, useState } from 'react'
 import { Activity, Bone, ChevronDown, CircleDot, Eye, EyeOff, HeartPulse, Info, Layers3, LocateFixed, Menu, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, X } from 'lucide-react'
 import manifestData from './data/anatomy-manifest.json'
+import InfoModal from './InfoModal'
 import { LayerState, LoadState, Structure, SYSTEMS, SystemId } from './types'
 
 const AnatomyScene = lazy(() => import('./scene/AnatomyScene'))
@@ -26,6 +27,7 @@ function App() {
   const [isolateId, setIsolateId] = useState<string | null>(null)
   const [panelOpen, setPanelOpen] = useState(true)
   const [mobileSheet, setMobileSheet] = useState(false)
+  const [infoOpen, setInfoOpen] = useState(false)
   const [focusRequest, setFocusRequest] = useState<{ id: string | null; nonce: number }>({ id: null, nonce: 0 })
   const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, failed: 0, total: 0, active: false })
 
@@ -76,7 +78,7 @@ function App() {
       </div>
       <div className="top-actions">
         <button className="quiet-button" onClick={() => focus(null)}><LocateFixed size={17} /> Reset view</button>
-        <button className="icon-button" aria-label="About"><Info size={18} /></button>
+        <button className="icon-button" onClick={() => setInfoOpen(true)} aria-label="View known limitations" title="Known limitations"><Info size={18} /></button>
       </div>
     </header>
 
@@ -143,6 +145,7 @@ function App() {
         <button className="reset-fab" onClick={resetAll} title="Reset scene"><RotateCcw size={18} /></button>
       </div>
     </section>
+    <InfoModal open={infoOpen} onClose={() => setInfoOpen(false)} />
   </main>
 }
 
