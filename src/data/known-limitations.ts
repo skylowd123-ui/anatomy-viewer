@@ -6,7 +6,7 @@
 // missing anatomy. When a gap gets filled, remove its entry here (and bump
 // verifiedStructures in datasetSummary if the total changes).
 
-export const atlasIntro = 'This atlas is built from the open-source BodyParts3D dataset (CC-BY-SA 2.1, Database Center for Life Science, Japan). Every structure shown has been individually verified against the dataset\'s official lookup tables and is accurately named and positioned. Where a structure isn\'t available in the source dataset, it\'s listed here rather than approximated or fabricated, so everything you see can be relied on as anatomically accurate.'
+export const atlasIntro = 'This atlas is built from the open-source BodyParts3D dataset (CC-BY-SA 2.1, Database Center for Life Science, Japan). Every structure shown has been individually verified against the dataset\'s official lookup tables and is accurately named and positioned. Where a structure isn\'t available in the source dataset, it\'s listed here rather than approximated or fabricated, so everything you see can be relied on as anatomically accurate. Note: 342 of 819 shipped meshes retain traceable BodyParts3D source IDs in their file metadata; the remaining 477 do not carry this metadata but were converted through the same asset pipeline (five lung-lobe meshes were generated separately).'
 
 export interface GapCategory {
   title: string
