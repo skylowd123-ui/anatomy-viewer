@@ -1,9 +1,10 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
-import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, X } from 'lucide-react'
+import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, Moon, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, Sun, X } from 'lucide-react'
 import manifestData from './data/anatomy-manifest.json'
 import InfoModal from './InfoModal'
 import { atlasStats } from './data/known-limitations'
 import { LayerState, LoadState, PanelView, Structure, SYSTEMS, SystemId } from './types'
+import { useTheme } from './useTheme'
 
 const AnatomyScene = lazy(() => import('./scene/AnatomyScene'))
 const About = lazy(() => import('./About'))
@@ -38,6 +39,7 @@ function App() {
   const [infoOpen, setInfoOpen] = useState(false)
   const [focusRequest, setFocusRequest] = useState<{ id: string | null; nonce: number }>({ id: null, nonce: 0 })
   const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, failed: 0, total: 0, active: false })
+  const { theme, toggleTheme } = useTheme()
 
   const selected = manifest.find(item => item.id === selectedId) ?? null
   const stats = useMemo(() => atlasStats(manifest), [])
@@ -127,6 +129,9 @@ function App() {
       </div>
       <div className="top-actions">
         <button className="quiet-button" onClick={() => focus(null)}><LocateFixed size={17} /> Reset view</button>
+        <button className="icon-button" onClick={toggleTheme} aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'} title={theme === 'dark' ? 'Light mode' : 'Dark mode'}>
+          {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
         <button className="icon-button" onClick={() => setInfoOpen(true)} aria-label="View known limitations" title="Known limitations"><Info size={18} /></button>
       </div>
     </header>
