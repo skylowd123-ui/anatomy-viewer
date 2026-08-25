@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, X } from 'lucide-react'
 import manifestData from './data/anatomy-manifest.json'
 import InfoModal from './InfoModal'
@@ -27,6 +27,10 @@ function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [showNames, setShowNames] = useState(false)
   const [query, setQuery] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
+  const [searchOpen, setSearchOpen] = useState(false)
+  const searchInputRef = useRef<HTMLInputElement>(null)
+  const searchWrapRef = useRef<HTMLDivElement>(null)
   const [isolateId, setIsolateId] = useState<string | null>(null)
   const [panelOpen, setPanelOpen] = useState(true)
   const [mobileSheet, setMobileSheet] = useState(false)
@@ -37,10 +41,45 @@ function App() {
 
   const selected = manifest.find(item => item.id === selectedId) ?? null
   const stats = useMemo(() => atlasStats(manifest), [])
-  const matches = useMemo(() => {
+
+  // Debounce query for expensive scene work (highlighting). Dropdown filtering
+  // stays instant using `query`, while `searchMatches` sent to the 3D scene is
+  // debounced to avoid re-traversing materials on every keystroke.
+  useEffect(() => {
+    const id = window.setTimeout(() => setDebouncedQuery(query), 180)
+    return () => window.clearTimeout(id)
+  }, [query])
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus()
+  }, [searchOpen])
+
+  useEffect(() => {
+    const onDown = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node
+      if (!searchWrapRef.current?.contains(target)) {
+        if (!query) setSearchOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', onDown)
+    document.addEventListener('touchstart', onDown)
+    return () => {
+      document.removeEventListener('mousedown', onDown)
+      document.removeEventListener('touchstart', onDown)
+    }
+  }, [query])
+
+  const instantMatches = useMemo(() => {
     const q = query.trim().toLowerCase()
     return q ? manifest.filter(item => item.displayName.toLowerCase().includes(q) || item.system.includes(q)) : []
   }, [query])
+
+  const debouncedMatches = useMemo(() => {
+    const q = debouncedQuery.trim().toLowerCase()
+    return q ? manifest.filter(item => item.displayName.toLowerCase().includes(q) || item.system.includes(q)) : []
+  }, [debouncedQuery])
+
+  const matches = debouncedMatches
 
   const toggleLayer = (system: SystemId) => setLayers(prev => ({ ...prev, [system]: { ...prev[system], visible: !prev[system].visible } }))
   const setOpacity = (system: SystemId, opacity: number) => setLayers(prev => ({ ...prev, [system]: { ...prev[system], opacity } }))
@@ -55,19 +94,20 @@ function App() {
     setLayers(prev => ({ ...prev, [item.system]: { ...prev[item.system], visible: true } }))
     setSelectedId(item.id)
     setFocusRequest({ id: item.id, nonce: Date.now() })
+    setQuery(item.displayName)
+    setDebouncedQuery(item.displayName)
+    setSearchOpen(false)
   }
 
-  const handleQuery = (value: string) => {
-    setQuery(value)
-    const first = manifest.find(item => item.displayName.toLowerCase().includes(value.trim().toLowerCase()))
-    if (value.trim() && first) {
-      setLayers(prev => ({ ...prev, [first.system]: { ...prev[first.system], visible: true } }))
-      setFocusRequest({ id: first.id, nonce: Date.now() })
-    }
+  const clearSearch = () => {
+    setQuery('')
+    setDebouncedQuery('')
+    setSearchOpen(false)
+    searchInputRef.current?.blur()
   }
 
   const resetAll = () => {
-    setSelectedId(null); setIsolateId(null); setQuery('')
+    setSelectedId(null); setIsolateId(null); setQuery(''); setDebouncedQuery(''); setSearchOpen(false)
     setFocusRequest({ id: null, nonce: Date.now() })
   }
 
@@ -75,14 +115,14 @@ function App() {
     <header className="topbar">
       <button className="icon-button mobile-only" onClick={() => setMobileSheet(true)} aria-label="Open navigation menu"><Menu /></button>
       <div className="brand"><span className="brand-mark"><Activity size={18} /></span><span>ANATOMICA</span><small>INTERACTIVE HUMAN ATLAS</small></div>
-      <div className="search-wrap">
-        <Search size={17} />
-        <input value={query} onChange={e => handleQuery(e.target.value)} placeholder="Search structures…" aria-label="Search anatomy structures" />
-        {query && <button onClick={() => setQuery('')} aria-label="Clear search"><X size={16} /></button>}
-        {query && <div className="search-results">
-          {matches.length ? matches.map(item => <button key={item.id} onClick={() => chooseSearchResult(item)}>
+      <div ref={searchWrapRef} className={`search-wrap ${searchOpen ? 'open' : ''}`} onClick={() => { if (!searchOpen) setSearchOpen(true) }}>
+        <Search size={17} className="search-icon" onClick={e => { e.stopPropagation(); setSearchOpen(o => !o); if (!searchOpen) setTimeout(() => searchInputRef.current?.focus(), 0) }} />
+        <input ref={searchInputRef} value={query} onChange={e => setQuery(e.target.value)} onFocus={() => setSearchOpen(true)} onKeyDown={e => { if (e.key === 'Escape') clearSearch() }} placeholder="Search structures…" aria-label="Search anatomy structures" />
+        {query && <button className="clear-search" onClick={e => { e.stopPropagation(); clearSearch() }} aria-label="Clear search"><X size={16} /></button>}
+        {query.trim() && <div className="search-results">
+          {instantMatches.length ? instantMatches.map(item => <button key={item.id} onClick={e => { e.stopPropagation(); chooseSearchResult(item) }} onTouchEnd={e => { e.preventDefault(); chooseSearchResult(item) }}>
             <span style={{ background: systemMeta[item.system].color }} /><b>{item.displayName}</b><small>{systemMeta[item.system].label}</small>
-          </button>) : <p>No structures found</p>}
+          </button>) : debouncedQuery.trim() ? <p>No structures found</p> : <p>Searching…</p>}
         </div>}
       </div>
       <div className="top-actions">
