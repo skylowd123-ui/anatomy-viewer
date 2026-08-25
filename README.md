@@ -18,6 +18,23 @@ npm run build
 npm run preview
 ```
 
+## Install and offline behavior
+
+The production build is an installable Progressive Web App. `public/manifest.webmanifest`
+defines the standalone launch surface, and `scripts/generate-icons.mjs` creates the
+180, 192, and 512 pixel launcher icons in `public/icons`.
+
+The service worker is deliberately registered only by a production build. The
+build finalizer precaches the application shell, hashed JavaScript and CSS,
+icons, manifest, Draco decoders, and other local static files. Google Fonts are
+learned into a separate font cache on the first online load. Anatomy models are
+not precached: every model request is network-first, with a cached response used
+only when the network is unavailable. The model cache is a rolling 400-entry
+window, so a newly published model cannot be hidden behind an old cache entry.
+
+To check the device-specific parts, install from the browser's Add to Home
+Screen prompt and launch the installed shortcut to verify standalone display.
+
 ## Included interactions
 
 - Orbit, pinch/scroll zoom, and right-drag/two-finger pan
@@ -32,6 +49,7 @@ npm run preview
 - Navigation panel with Systems, About, and Contact sections (About/Contact are code-split and load only when opened)
 - Light/dark theme toggle in the top bar — follows the system preference on first visit, persists the user's choice, and keeps the 3D viewport dark in both themes so structure colors never lose their tuned contrast
 - Local Draco decoder support (no runtime CDN dependency)
+- Installable PWA with generated launcher icons and a production-only offline service worker
 - Code-split 3D scene; the application shell loads first
 
 ## Folder layout
@@ -47,7 +65,12 @@ src/
 public/
   models/<system>/*.glb       # Anatomy assets (generated after install for demo)
   draco/                      # Generated after install
+  icons/                      # Generated PWA launcher icons
+  manifest.webmanifest        # Install metadata
+  sw.js                      # Production service-worker template
 scripts/prepare-assets.mjs    # Demo GLB + decoder setup
+scripts/generate-icons.mjs   # Reproducible PWA icon generator
+scripts/finalize-pwa.mjs     # Injects built static URLs into sw.js
 ```
 
 ## Add a structure
