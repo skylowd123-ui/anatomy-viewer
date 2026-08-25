@@ -1,10 +1,11 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
-import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, Moon, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, Sun, X } from 'lucide-react'
+import { Activity, Bone, BookOpen, ChevronDown, CircleDot, Download, Eye, EyeOff, Info, Layers3, LocateFixed, Mail, Menu, Moon, PanelLeftClose, PanelLeftOpen, RotateCcw, Search, Sparkles, Sun, X } from 'lucide-react'
 import manifestData from './data/anatomy-manifest.json'
 import InfoModal from './InfoModal'
 import { atlasStats } from './data/known-limitations'
 import { LayerState, LoadState, PanelView, Structure, SYSTEMS, SystemId } from './types'
 import { useTheme } from './useTheme'
+import { useInstallPrompt } from './useInstallPrompt'
 
 const AnatomyScene = lazy(() => import('./scene/AnatomyScene'))
 const About = lazy(() => import('./About'))
@@ -40,6 +41,7 @@ function App() {
   const [focusRequest, setFocusRequest] = useState<{ id: string | null; nonce: number }>({ id: null, nonce: 0 })
   const [loadState, setLoadState] = useState<LoadState>({ loaded: 0, failed: 0, total: 0, active: false })
   const { theme, toggleTheme } = useTheme()
+  const { canInstall, install } = useInstallPrompt()
 
   const selected = manifest.find(item => item.id === selectedId) ?? null
   const stats = useMemo(() => atlasStats(manifest), [])
@@ -129,6 +131,7 @@ function App() {
       </div>
       <div className="top-actions">
         <button className="quiet-button" onClick={() => focus(null)}><LocateFixed size={17} /> Reset view</button>
+        {canInstall && <button className="quiet-button install-button" onClick={() => { void install() }}><Download size={17} /> Install app</button>}
         <button className="icon-button" onClick={toggleTheme} aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'} title={theme === 'dark' ? 'Light mode' : 'Dark mode'}>
           {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
         </button>

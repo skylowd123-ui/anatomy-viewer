@@ -297,7 +297,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--focus-ring)
 
 .top-actions { display: flex; justify-content: flex-end; align-items: center; gap: 8px; }
 .icon-button, .quiet-button { border: 1px solid var(--line); background: var(--surface-1); min-width: 40px; height: 40px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; }
-.quiet-button { padding: 0 13px; font-size: 12px; color: var(--button-text); }.icon-button:hover,.quiet-button:hover { background: var(--surface-hover); border-color: var(--button-hover-border); }
+.quiet-button { padding: 0 13px; font-size: 12px; color: var(--button-text); }.install-button { color: var(--gold-button-text); border-color: var(--gold-border); }.icon-button:hover,.quiet-button:hover { background: var(--surface-hover); border-color: var(--button-hover-border); }
 
 .workspace { flex: 1; min-height: 0; display: flex; position: relative; }
 .layer-panel { width: 292px; flex: 0 0 292px; background: var(--panel-bg); border-right: 1px solid var(--line); padding: 25px 18px 18px; overflow: auto; transition: margin .25s ease, transform .25s ease; z-index: 20; scrollbar-width: thin; scrollbar-color: var(--scrollbar) transparent; }
