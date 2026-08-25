@@ -30,6 +30,7 @@ npm run preview
 - Streaming progress indicator
 - Desktop side panel and touch-friendly mobile bottom sheet
 - Navigation panel with Systems, About, and Contact sections (About/Contact are code-split and load only when opened)
+- Light/dark theme toggle in the top bar — follows the system preference on first visit, persists the user's choice, and keeps the 3D viewport dark in both themes so structure colors never lose their tuned contrast
 - Local Draco decoder support (no runtime CDN dependency)
 - Code-split 3D scene; the application shell loads first
 
